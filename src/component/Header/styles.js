@@ -5,7 +5,7 @@ export const LandingStyle = styled.div`
   /* ////////////////////The header section */
   .main_container {
     height: 100vh;
-    background: #14213D;
+    background: #14213d;
     width: 100%;
     overflow: hidden;
   }
@@ -27,16 +27,32 @@ export const LandingStyle = styled.div`
   }
   .headMain aside .header_img_Maindiv {
     display: flex;
-    /* justify-content: flex-end; */
     width: 100%;
     height: 100%;
   }
   .header_img_div {
-    margin: auto 0 0 20%;
+    margin: auto 20% 0 auto;
     width: max-content;
     height: max-content;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      position: absolute;
+      content: "";
+      width: 1px;
+      right: 0;
+      top: 40%;
+      height: 200px;
+      background: #e5e5e52b;
+    }
     @media (max-width: 600px) {
-      margin: auto 0 0 5%;
+      margin: auto;
+      width: 100%;
+
+      object-fit: cover;
     }
   }
   .main_container .header_img_div img {
@@ -56,40 +72,46 @@ export const LandingStyle = styled.div`
     top: 40%;
     /* bottom: 50%; */
     margin: auto;
-    right: 10%;
+    left: 10%;
     width: 450px;
     @media (max-width: 1000px) {
-      background: #e5e5e530;
+      background: #04040487;
+      /* background: #e5e5e530; */
       right: 0;
       left: 0;
-      border: 1px solid #FBC56D;
+      border: 1px solid #fbc56d;
       padding: 20px;
     }
     @media (max-width: 600px) {
-      width: 80%;
-      margin: auto;
+      width: 90%;
+      margin: 40px auto 0;
     }
   }
-  .captionDiv h2 {
-    margin: auto;
-    font-family: "Ruthie", cursive;
-    font-size: 5rem;
-    line-height: normal;
-    color: white;
-    font-weight: lighter;
-    text-align: end;
-    @media (max-width: 600px) {
-      font-size: 3rem;
-      text-align: center;
+  .captionDiv {
+    max-height: 100px;
+    overflow: hidden;
+    h2 {
+      margin: auto;
+      font-family: "Ruthie", cursive;
+      font-size: 5rem;
+      line-height: normal;
+      color: white;
+      font-weight: lighter;
+      text-align: start;
+      @media (max-width: 600px) {
+        font-size: 3rem;
+        text-align: center;
+      }
     }
   }
   .moreDetail {
-    border-top: 1px solid #FBC56D;
+    border-top: 1px solid #fbc56d;
     width: 300px;
-    margin: 0 0 0 auto;
-    margin-top: 50px;
-    padding-top: 50px;
+    margin: 0 auto 0 0;
+    margin-top: 30px;
+    padding-top: 40px;
     @media (max-width: 600px) {
+      padding-top: 20px;
       width: auto;
       margin: 10px 0 0 0;
     }
@@ -97,7 +119,7 @@ export const LandingStyle = styled.div`
   .moreDetail p {
     font-size: 12px;
     color: white;
-    text-align: end;
+    text-align: start;
     @media (max-width: 600px) {
       text-align: center;
     }

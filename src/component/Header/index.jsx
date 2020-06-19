@@ -8,12 +8,6 @@ export default class Landing extends React.Component {
         <section className="main_container">
           <div className="headMain">
             <aside className="landingImgDiv">
-              <div className="header_img_Maindiv">
-                <div className="header_img_div">
-                  {/* <img src={require("../../assets/student.png")} alt="" /> */}
-                </div>
-              </div>
-
               <aside className="learning">
                 <div className="captionDiv">
                   <h2>I'm  Bernardine</h2>
@@ -27,6 +21,13 @@ export default class Landing extends React.Component {
                   </p>
                 </div>
               </aside>
+              
+              <div className="header_img_Maindiv">
+                <div className="header_img_div">
+                  <img src={require("../../assets/images/ladyB.png")} alt="" />
+                </div>
+              </div>
+
             </aside>
           </div>
         </section>

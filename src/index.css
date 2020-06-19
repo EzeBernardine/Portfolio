@@ -12,7 +12,9 @@ body {
 
   /* font-family: 'Lora', serif; */
 }
-
+*{
+  box-sizing: border-box;
+}
 p,
 h1,
 h2 {
@@ -27,6 +29,7 @@ p {
 }
 h1 {
   line-height: 2em;
+  font-size: 2rem;
 }
 h2 {
   color: #3c3838;
