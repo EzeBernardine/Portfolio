@@ -11,6 +11,22 @@ export const ServicesStyle = styled.div`
       @media (max-width: 600px) {
         width: 80%;
       }
+      h1 {
+        position: relative;
+        width: max-content;
+        margin: 30px auto;
+        &:before {
+          background: #fca311;
+          content: "";
+          width: 40%;
+          height: 3px;
+          right: 0;
+          left: 0;
+          margin: auto;
+          bottom: 5px;
+          position: absolute;
+        }
+      }
       p {
         color: #4d4d4d;
         font-size: 1rem;
@@ -56,11 +72,9 @@ export const ServicesStyle = styled.div`
             width: 100%;
             position: absolute;
             padding: 10px;
-            font-family: "Ruthie", cursive;
-            font-family: "Charmonman", cursive;
-            /* text-align: start; */
             h3 {
-              color: #fff;
+              color: #000;
+              font-family: "Charmonman", cursive;
             }
             p {
               color: #000;

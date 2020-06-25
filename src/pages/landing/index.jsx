@@ -4,6 +4,8 @@ import Menu from "../../component/Menu";
 import Header from "../../component/Header";
 import About from "../../component/About";
 import Services from "../../component/Services";
+import Works from '../../component/works'
+import Experience from '../../component/Experience'
 
 const Landing = () => {
   return (
@@ -12,6 +14,8 @@ const Landing = () => {
       <Header />
       <About />
       <Services />
+      {/* <Works /> */}
+      <Experience />
     </LandingStyle>
   );
 };

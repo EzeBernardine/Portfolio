@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import img from "../image/student.png";
+import star from "../../assets/images/me.jpg";
 
 export const LandingStyle = styled.div`
   /* ////////////////////The header section */
@@ -8,6 +8,11 @@ export const LandingStyle = styled.div`
     background: #14213d;
     width: 100%;
     overflow: hidden;
+    background-image: url(${star});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    background-size: cover;
   }
   .headMain {
     display: flex;
@@ -36,7 +41,7 @@ export const LandingStyle = styled.div`
     height: max-content;
     position: relative;
 
-    &:after {
+    /* &:after {
       position: absolute;
       content: "";
       width: 100%;
@@ -47,7 +52,7 @@ export const LandingStyle = styled.div`
       top: 40%;
       height: 200px;
       background: #e5e5e52b;
-    }
+    } */
     @media (max-width: 600px) {
       margin: auto;
       width: 100%;
@@ -70,7 +75,7 @@ export const LandingStyle = styled.div`
     position: absolute;
     z-index: 10;
     top: 40%;
-    /* bottom: 50%; */
+    /* bottom: 30px; */
     margin: auto;
     left: 10%;
     width: 450px;

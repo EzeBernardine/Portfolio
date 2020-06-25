@@ -25,7 +25,7 @@ export const AboutStyle = styled.div`
         content: '';
         width: 40%;
         height: 3px;
-        bottom: 10px;
+        bottom: 5px;
         position: absolute;
       }
     }
