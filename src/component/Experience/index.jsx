@@ -35,8 +35,8 @@ const Experience = () => {
             </FlexibleDiv>
             <div className="brief">
               <p>
-                Act as if what you do makes a difference. It does. <br />
-                <b>Elbert Hubba;rd</b>
+                <b>Act as if what you do makes a difference. It does.</b> <br />
+                Elbert Hubba;rd
               </p>
             </div>
             <div className="detail">

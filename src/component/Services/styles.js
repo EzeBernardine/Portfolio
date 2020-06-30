@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const ServicesStyle = styled.div`
+  background: #14213de3;
   padding: 50px 0;
-  /* background: #000000; */
+  position: relative;
+  box-shadow: 0 2px 3px 3px #06060638;
   .container {
     header {
       text-align: center;
@@ -28,7 +30,7 @@ export const ServicesStyle = styled.div`
         }
       }
       p {
-        color: #4d4d4d;
+        color: #fff;
         font-size: 1rem;
       }
     }
@@ -43,19 +45,17 @@ export const ServicesStyle = styled.div`
         width: 100%;
       }
       .cards {
-        margin: 50px auto;
+        padding: 50px 0;
         .card {
+          box-shadow: 0 0 2px 4px #06060638;
           height: 200px;
           width: 300px;
           border-radius: 5px;
           margin: 20px;
           position: relative;
           overflow: hidden;
-          &:first-child .content {
-            background: #2a9d8fe6;
-          }
-          &:last-child .content {
-            background: #f4a261de;
+          &:hover {
+            box-shadow: 0 0 10px 10px #06060638;
           }
           .imgWrap {
             height: 100%;
@@ -68,6 +68,8 @@ export const ServicesStyle = styled.div`
             }
           }
           .content {
+            /* background: #0908087a; */
+            background: #ffffffc9;
             height: 100%;
             width: 100%;
             position: absolute;

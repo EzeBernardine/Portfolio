@@ -7,13 +7,13 @@ const Services = () => {
   const card = useRef();
 
   const handleScroll = () =>
-    console.dir(card.current.clientHeight);
+    // console.dir(card.current.clientHeight);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
+      return () => window.removeEventListener("scroll", handleScroll);
+    });
 
   const services = [
     {
@@ -45,7 +45,7 @@ const Services = () => {
         <section>
           <FlexibleDiv className="cards" justifyContent="space-around">
             {services.map(({ img, name, about }) => (
-              <div className="card" >
+              <div className="card">
                 <div className="imgWrap">
                   <img src={img} alt="" />
                 </div>

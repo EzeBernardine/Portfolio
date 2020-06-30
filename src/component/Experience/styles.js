@@ -6,16 +6,18 @@ export const ExperinceStyle = styled.div`
   /* background: #000000c4; */
   background: #14213d;
   .container {
-    /* height: 600px; */
     box-shadow: 31px 32px 36px 3px #0000008f;
     width: 80%;
     margin: auto;
     position: relative;
     background: #e5e5e5;
     background-image: url(${star});
-    background-position: center;
+    background-position: left;
     background-size: cover;
     background-blend-mode: luminosity;
+    @media (max-width: 600px) {
+     width: 90% 
+    }
     .overlay {
       position: absolute;
       top: 0;
@@ -37,6 +39,10 @@ export const ExperinceStyle = styled.div`
       position: relative;
       padding: 50px;
       height: auto;
+      @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
       .myName {
         position: absolute;
         top: 0;
@@ -51,6 +57,10 @@ export const ExperinceStyle = styled.div`
       .brief {
         width: 23%;
         margin-left: 50px;
+        @media (max-width: 900px) {
+          margin: 50px 0 50px 0;
+          width: 100%;
+        }
         b {
           color: white;
         }
@@ -58,6 +68,9 @@ export const ExperinceStyle = styled.div`
       .detail {
         width: 40%;
         text-align: left;
+        @media (max-width: 900px) {
+          width: 100%;
+        }
         h1 {
           color: white;
           line-height: 1.3em;
@@ -68,10 +81,27 @@ export const ExperinceStyle = styled.div`
     .wrap {
       position: relative;
       margin-top: 100px;
-
+      @media only screen and (max-width: 1200px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      @media only screen and (max-width: 1000px) {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+      }
       .direct {
         width: max-content;
         margin-right: 50px;
+        @media (max-width: 1000px) {
+          flex-direction: column;
+        }
+        @media (max-width: 600px) {
+          display: none
+        }
+        & > div {
+          width: max-content;
+        }
         span {
           color: white;
           background: #0000009e;
@@ -90,7 +120,13 @@ export const ExperinceStyle = styled.div`
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 30px;
         background: #0000009e;
-        /* background: #3b3b3b9e; */
+        @media (max-width: 1000px) {
+          max-width: 350px;
+          grid-template-columns: 1fr;
+        }
+        @media (max-width: 600px) {
+          margin: auto
+        }
         .card {
           /* border: 1px solid #fca31191; */
           padding: 20px;

@@ -2,7 +2,6 @@ import styled from "styled-components";
 import star from "../../assets/images/me.jpg";
 
 export const LandingStyle = styled.div`
-  /* ////////////////////The header section */
   .main_container {
     height: 100vh;
     background: #14213d;
@@ -41,18 +40,6 @@ export const LandingStyle = styled.div`
     height: max-content;
     position: relative;
 
-    /* &:after {
-      position: absolute;
-      content: "";
-      width: 100%;
-      position: absolute;
-      content: "";
-      width: 1px;
-      right: 0;
-      top: 40%;
-      height: 200px;
-      background: #e5e5e52b;
-    } */
     @media (max-width: 600px) {
       margin: auto;
       width: 100%;
@@ -75,13 +62,13 @@ export const LandingStyle = styled.div`
     position: absolute;
     z-index: 10;
     top: 40%;
-    /* bottom: 30px; */
+
     margin: auto;
     left: 10%;
     width: 450px;
     @media (max-width: 1000px) {
       background: #04040487;
-      /* background: #e5e5e530; */
+
       right: 0;
       left: 0;
       border: 1px solid #fbc56d;
@@ -93,13 +80,14 @@ export const LandingStyle = styled.div`
     }
   }
   .captionDiv {
-    max-height: 100px;
     overflow: hidden;
     h2 {
       margin: auto;
       font-family: "Ruthie", cursive;
       font-size: 5rem;
-      line-height: normal;
+      word-spacing: nowrap;
+      line-height: inherit;
+      white-space: nowrap;
       color: white;
       font-weight: lighter;
       text-align: start;

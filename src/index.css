@@ -30,11 +30,14 @@ p {
 h1 {
   line-height: 2em;
   font-size: 2rem;
+  margin: 0;
 }
 h2 {
   color: #3c3838;
   line-height: 1.5rem;
+  margin: 0;
 }
 a {
   text-decoration: none;
+  margin: 0;
 }
