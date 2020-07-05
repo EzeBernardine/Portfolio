@@ -17,6 +17,7 @@ export const ServicesStyle = styled.div`
         position: relative;
         width: max-content;
         margin: 30px auto;
+        color: #fff;
         &:before {
           background: #fca311;
           content: "";

@@ -6,6 +6,7 @@ import About from "../../component/About";
 import Services from "../../component/Services";
 import Works from '../../component/works'
 import Experience from '../../component/Experience'
+import Stack from '../../component/Stacks'
 
 const Landing = () => {
   return (
@@ -16,6 +17,7 @@ const Landing = () => {
       <Services />
       {/* <Works /> */}
       <Experience />
+      <Stack />
     </LandingStyle>
   );
 };
