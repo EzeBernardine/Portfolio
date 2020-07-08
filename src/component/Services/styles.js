@@ -17,21 +17,21 @@ export const ServicesStyle = styled.div`
         position: relative;
         width: max-content;
         margin: 30px auto;
-        color: #fff;
+        color: #000;
         &:before {
           background: #fca311;
           content: "";
           width: 40%;
           height: 3px;
-          right: 0;
+          /* right: 0; */
           left: 0;
-          margin: auto;
+          /* margin: auto; */
           bottom: 5px;
           position: absolute;
         }
       }
       p {
-        color: #fff;
+        color: #000;
         font-size: 1rem;
       }
     }

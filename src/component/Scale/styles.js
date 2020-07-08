@@ -1,56 +1,79 @@
 import styled from "styled-components";
 
-export const ScaleStyles = styled.div`
-  .scales {
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-`;
-
 export const RangeStyles = styled.div`
-  .range {
+  .scale-range {
+    width: 120px;
+    /* border: ${({ baseColor, centerColor = "black" }) =>
+      !(baseColor === centerColor) ? `2px solid ${centerColor}` : "none"}; */
+    height: 120px;
+    /* min-width: 150px;
+    min-height: 150px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 150px;
     border-radius: 50%;
-    background-color: ${({ range, color, baseColor }) =>
+    background-color: ${({ range, color, baseColor, centerColor = "black" }) =>
       range < 26
-        ? baseColor // "green"
+        ? baseColor
+          ? baseColor === "transparent"
+            ? centerColor
+            : baseColor
+          : "#555454"
         : range > 26 && range < 50
-        ? color || "purple" // "red"
+        ? color || "chartreuse"
         : range > 49
         ? "transparent"
         : "none"};
-    /* background-color: red; */
-    background-image: ${({ range, color, baseColor }) =>
+    background-image: ${({ range, color, baseColor, centerColor = "black" }) =>
       range < 26
-        ? `linear-gradient( ${-(90 - range * 3.6)}deg, ${baseColor ||
-            "red"} 50%, transparent 50%),linear-gradient(90deg, transparent 50%,  ${color ||
+        ? `linear-gradient( ${-(90 - range * 3.6)}deg, 
+        ${
+          baseColor
+            ? baseColor === "transparent"
+              ? centerColor
+              : baseColor
+            : "#555454"
+        } 
+          50%, transparent 50%),linear-gradient(90deg, transparent 50%,  ${color ||
             "chartreuse"} 50%)`
         : range > 26 && range < 50
-        ? `linear-gradient( ${range * 3.6 - 90}deg,${baseColor ||
-            "blue"}  50%, transparent 50%),linear-gradient(90deg, ${baseColor ||
-            "blue"}  50%, transparent 50%)`
+        ? `linear-gradient( ${range * 3.6 - 90}deg,${
+            baseColor
+              ? baseColor === "transparent"
+                ? centerColor
+                : baseColor
+              : "#555454"
+          }  50%, transparent 50%),linear-gradient(90deg, ${
+            baseColor
+              ? baseColor === "transparent"
+                ? centerColor
+                : baseColor
+              : "#555454"
+          }  50%, transparent 50%)`
         : range > 49
         ? `linear-gradient( ${range * 3.6 - 90}deg, transparent 50%, ${color ||
-            "chartreuse"} 50%),linear-gradient(90deg, ${baseColor ||
-            "blue"} 50%, ${color || "chartreuse"} 50%)`
+            "chartreuse"} 50%),linear-gradient(90deg, ${
+            baseColor
+              ? baseColor === "transparent"
+                ? centerColor
+                : baseColor
+              : "#555454"
+          } 50%, ${color || "chartreuse"} 50%)`
         : "none"};
-    .cover {
-      width: 95%;
-      height: 95%;
-      background: #1f2229;
+    .scale-cover {
+      width: ${({ thikness }) => thikness + "%" || "95%"};
+      height: ${({ thikness }) => thikness + "%" || "95%"};
+      background: ${({ centerColor = "black" }) => centerColor};
       margin: auto;
       border-radius: 50%;
-      color: #fff;
       overflow: hidden;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      small {
+        color: ${({ color }) => color || "white"};
+      }
     }
   }
 `;
