@@ -37,7 +37,7 @@ export const StacksStyle = styled.div`
       @media (max-width: 1100px) {
         justify-content: space-around;
         & > div {
-          margin: 30px;
+          margin: 20px;
         }
       }
     }

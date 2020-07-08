@@ -35,7 +35,7 @@ const Stack = () => {
     <StacksStyle>
       <FlexibleDiv className="container">
         <div className="test">
-          <h1>My Skill</h1>
+          <h1>My Skills</h1>
         </div>
         <section className="scales">
           {Stacks.map(scale => (
