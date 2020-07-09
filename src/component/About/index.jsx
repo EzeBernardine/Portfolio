@@ -6,7 +6,7 @@ import Button from "../Button";
 const Menu = () => {
   return (
     <AboutStyle>
-      <FlexibleDiv className='container'>
+      <FlexibleDiv className="container">
         <div className="about">
           <h1>About Me</h1>
         </div>
@@ -24,8 +24,10 @@ const Menu = () => {
                 bgColor="#E5E5E5"
                 color="#FCA311"
                 hColor="#FCA311"
+                type="button"
+                click={() => []}
               />
-              <Button text="View Works" />
+              <Button text="View Works" click={() => []} type="button" />
             </FlexibleDiv>
           </div>
         </div>

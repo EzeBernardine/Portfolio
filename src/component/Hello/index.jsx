@@ -12,7 +12,14 @@ const Hello = () => {
           <p>Have any Project in Mind?</p>
           <h1> JUST SAY HELLO</h1>
           <FlexibleDiv className="btn">
-            <Button text="Hire Me" bgColor="transparent" size='md' color="#E5E5E5" />
+            <Button
+              text="Hire Me"
+              bgColor="transparent"
+              size="md"
+              type="button"
+              color="#E5E5E5"
+              click={() => []}
+            />
           </FlexibleDiv>
         </div>
       </FlexibleDiv>

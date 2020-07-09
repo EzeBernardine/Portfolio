@@ -1,14 +1,14 @@
-import React  from "react";
+import React from "react";
 import { WorksStyle } from "./styles";
 import { FlexibleDiv } from "../Box/flexibleDiv.styles";
 
 const Works = () => {
   const collection = [
-    { img: require("../../assets/images/page1.jpg") },
-    { img: require("../../assets/images/page2.jpg") },
-    { img: require("../../assets/images/page3.webp") },
-    { img: require("../../assets/images/page4.png") },
-    { img: require("../../assets/images/page5.jpg") },
+    { img: require("../../assets/images/page1.jpg"), expKey: 1 },
+    { img: require("../../assets/images/page2.jpg"), expKey: 12 },
+    { img: require("../../assets/images/page3.webp"), expKey: 13 },
+    { img: require("../../assets/images/page4.png"), expKey: 14 },
+    { img: require("../../assets/images/page5.jpg"), expKey: 15 }
   ];
   return (
     <WorksStyle>
@@ -24,7 +24,7 @@ const Works = () => {
         </header>
 
         <section>
-          <FlexibleDiv alignItems='first baseline'>
+          <FlexibleDiv alignItems="first baseline">
             <div className="links">
               <ul>
                 <li>SureGift</li>
@@ -34,8 +34,8 @@ const Works = () => {
               </ul>
             </div>
             <div className="images">
-              {collection.map(({ img }) => (
-                <div className="imgWrap">
+              {collection.map(({ img, expKey }) => (
+                <div className="imgWrap" key={expKey}>
                   <img src={img} alt="" />
                 </div>
               ))}

@@ -1,25 +1,27 @@
-import React  from "react";
+import React from "react";
 import { ExperinceStyle } from "./styles";
 import { FlexibleDiv } from "../Box/flexibleDiv.styles";
-
 
 const Experience = () => {
   const cards = [
     {
       title: "Front-end lead, EmBED",
       date: "20-15-2012",
+      expKey: 1,
       test:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dicta libero exercitationem consectetur, et quas obcaecati, eius voluptatibus ea, sapiente nulla quibusdam suscipit. Impedit vel sint fugiat asperiores ipsa ratione."
     },
     {
       title: "Front-end lead, EmBED",
       date: "20-15-2012",
+      expKey: 12,
       test:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dicta libero exercitationem consectetur, et quas obcaecati, eius voluptatibus ea, sapiente nulla quibusdam suscipit. Impedit vel sint fugiat asperiores ipsa ratione."
     },
     {
       title: "Front-end lead, EmBED",
       date: "20-15-2012",
+      expKey: 13,
       test:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dicta libero exercitationem consectetur, et quas obcaecati, eius voluptatibus ea, sapiente nulla quibusdam suscipit. Impedit vel sint fugiat asperiores ipsa ratione."
     }
@@ -64,8 +66,8 @@ const Experience = () => {
               </FlexibleDiv>
             </FlexibleDiv>
             <div className="cards">
-              {cards.map(({ title, date, test }) => (
-                <div className="card">
+              {cards.map(({ title, date, test, expKey }) => (
+                <div className="card" key={expKey}>
                   <div className="date">
                     <small>{date}</small>
                   </div>

@@ -19,13 +19,15 @@ const Services = () => {
       name: "Web Development",
       about:
         "  voluptatibus consequuntur error doloribus distinctio harum      provident, blanditiis fugit in laboriosam consectetur",
-      img: require("../../assets/images/dev.png")
+      img: require("../../assets/images/dev.png"),
+      exp_key: 1
     },
     {
       name: "Desktop Development",
       about:
         "  voluptatibus consequuntur error doloribus distinctio harum      provident, blanditiis fugit in laboriosam consectetur",
-      img: require("../../assets/images/desktop.jpg")
+      img: require("../../assets/images/desktop.jpg"),
+      exp_key: 2
     }
   ];
   return (
@@ -43,8 +45,8 @@ const Services = () => {
 
         <section>
           <FlexibleDiv className="cards" justifyContent="space-around">
-            {services.map(({ img, name, about }) => (
-              <div className="card">
+            {services.map(({ img, name, about, exp_key }) => (
+              <div className="card" key={exp_key}>
                 <div className="imgWrap">
                   <img src={img} alt="" />
                 </div>

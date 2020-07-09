@@ -58,7 +58,7 @@ const ContactMe = () => {
             validationSchema={validationSchema}
             onSubmit={async () => {}}
           >
-            {({  handleSubmit, handleChange }) => (
+            {({  handleSubmit, handlechange }) => (
               <Form className="form_class" onSubmit={handleSubmit}>
                 <div className="formSub">
                   <div className="inputMain">
@@ -66,7 +66,7 @@ const ContactMe = () => {
                       type="text"
                       name="name"
                       placeholder="Name"
-                      handleChange={handleChange}
+                      handlechange={handlechange}
                     />
                     <ErrorMessage
                       name="name"
@@ -79,7 +79,7 @@ const ContactMe = () => {
                       type="text"
                       name="name"
                       placeholder="Name"
-                      handleChange={handleChange}
+                      handlechange={handlechange}
                     />
                     <ErrorMessage
                       name="name"
@@ -92,7 +92,7 @@ const ContactMe = () => {
                       type="text"
                       name="name"
                       placeholder="Name"
-                      handleChange={handleChange}
+                      handlechange={handlechange}
                     />
                     <ErrorMessage
                       name="name"
@@ -107,6 +107,8 @@ const ContactMe = () => {
                       bgColor="transparent"
                       size="md"
                       color="#E5E5E5"
+                      type='button'
+                      click={() => []}
                     />
                   </FlexibleDiv>
                 </div>
