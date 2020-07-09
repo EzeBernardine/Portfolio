@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
-import { StacksStyle, StackStyle } from "./styles";
+import React  from "react";
+import { StacksStyle } from "./styles";
 import { FlexibleDiv } from "../Box/flexibleDiv.styles";
-import Button from "../Button";
 import Scale from "../Scale";
 
 const Stack = () => {

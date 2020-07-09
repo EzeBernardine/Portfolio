@@ -1,8 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import { HelloStyle } from "./styles";
 import { FlexibleDiv } from "../Box/flexibleDiv.styles";
 import Button from "../Button";
-import Scale from "../Scale";
 
 const Hello = () => {
   return (

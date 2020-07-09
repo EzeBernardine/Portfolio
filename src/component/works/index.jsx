@@ -1,8 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React  from "react";
 import { WorksStyle } from "./styles";
 import { FlexibleDiv } from "../Box/flexibleDiv.styles";
-import Button from "../Button";
-// import suregift from '../../assets/images/page1.jpg'
 
 const Works = () => {
   const collection = [

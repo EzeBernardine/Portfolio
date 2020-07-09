@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import { ScaleStyles, RangeStyles } from "./styles";
+import React  from "react";
+import {  RangeStyles } from "./styles";
 
 const Scale = ({ scale }) => {
   return (

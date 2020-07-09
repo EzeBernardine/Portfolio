@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import { ContactMeStyle } from "./styles";
 import { FlexibleDiv } from "../Box/flexibleDiv.styles";
 import Button from "../Button";
@@ -56,9 +56,9 @@ const ContactMe = () => {
           <Formik
             initialValues={{ email: "", name: "" }}
             validationSchema={validationSchema}
-            onSubmit={async (values, { setSubmitting }) => {}}
+            onSubmit={async () => {}}
           >
-            {({ isSubmitting, handleSubmit, handleChange }) => (
+            {({  handleSubmit, handleChange }) => (
               <Form className="form_class" onSubmit={handleSubmit}>
                 <div className="formSub">
                   <div className="inputMain">

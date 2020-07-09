@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React  from "react";
 import { ExperinceStyle } from "./styles";
 import { FlexibleDiv } from "../Box/flexibleDiv.styles";
-import Button from "../Button";
+
 
 const Experience = () => {
   const cards = [

@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { ServicesStyle } from "./styles";
 import { FlexibleDiv } from "../Box/flexibleDiv.styles";
-import Button from "../Button";
 
 const Services = () => {
   const card = useRef();

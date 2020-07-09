@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { AboutStyle } from "./styles";
 import { FlexibleDiv } from "../Box/flexibleDiv.styles";
 import Button from "../Button";

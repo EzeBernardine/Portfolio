@@ -1,8 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import { FooterStyle } from "./styles";
 import { FlexibleDiv } from "../Box/flexibleDiv.styles";
-import Button from "../Button";
-import Scale from "../Scale";
 import { FaFacebookF, FaMediumM } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { TiSocialInstagram } from "react-icons/ti";
