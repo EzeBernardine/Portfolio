@@ -49,14 +49,11 @@ export const ContactMeStyle = styled.div`
           position: relative;
           padding-left: 15px;
           color: #fbc56d;
+            font-size: 0.8rem;
           &:before {
             content: "✔️";
             position: absolute;
             left: 0;
-          }
-          a {
-            color: #fbc56d;
-            font-size: 0.8rem;
           }
         }
       }

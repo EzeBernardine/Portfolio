@@ -21,22 +21,22 @@ const Menu = () => {
           <div className="linkDiv">
             <ul>
               <li>
-                <a href="/data">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="auth">About</a>
+                <a href="/">About</a>
               </li>
               <li>
-                <a href="/auth">Skills</a>
+                <a href="/">Skills</a>
               </li>
               <li>
-                <a href="/auth">Portfolio</a>
+                <a href="/">Portfolio</a>
               </li>
               <li>
-                <a href="/auth">Contact</a>
+                <a href="/">Contact</a>
               </li>
               <li>
-                <a href="/auth">Blog</a>
+                <a href="/">Blog</a>
               </li>
             </ul>
           </div>

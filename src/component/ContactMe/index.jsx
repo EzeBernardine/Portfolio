@@ -36,18 +36,10 @@ const ContactMe = () => {
           </div>
           <div className="links">
             <ul>
-              <li>
-                <a href="#">+2347038065257</a>
-              </li>
-              <li>
-                <a href="#">demayous1@gmail.com</a>
-              </li>
-              <li>
-                <a href="#">demayous2@gmail.com</a>
-              </li>
-              <li>
-                <a href="#">Nigeria, Aba</a>
-              </li>
+              <li>+2347038065257</li>
+              <li>demayous1@gmail.com</li>
+              <li>demayous2@gmail.com</li>
+              <li>Nigeria, Aba</li>
             </ul>
           </div>
         </div>
@@ -58,7 +50,7 @@ const ContactMe = () => {
             validationSchema={validationSchema}
             onSubmit={async () => {}}
           >
-            {({  handleSubmit, handlechange }) => (
+            {({ handleSubmit, handlechange }) => (
               <Form className="form_class" onSubmit={handleSubmit}>
                 <div className="formSub">
                   <div className="inputMain">
@@ -107,7 +99,7 @@ const ContactMe = () => {
                       bgColor="transparent"
                       size="md"
                       color="#E5E5E5"
-                      type='button'
+                      type="button"
                       click={() => []}
                     />
                   </FlexibleDiv>
