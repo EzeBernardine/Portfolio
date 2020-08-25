@@ -16,7 +16,7 @@ export const ExperinceStyle = styled.div`
     background-size: cover;
     background-blend-mode: luminosity;
     @media (max-width: 600px) {
-     width: 90% 
+      width: 90%;
     }
     .overlay {
       position: absolute;
@@ -97,7 +97,7 @@ export const ExperinceStyle = styled.div`
           flex-direction: column;
         }
         @media (max-width: 600px) {
-          display: none
+          display: none;
         }
         & > div {
           width: max-content;
@@ -109,10 +109,14 @@ export const ExperinceStyle = styled.div`
           padding: 20px;
           cursor: pointer;
           &:hover {
-            background: #fbc56d;
+            background: #fbc56d30;
             color: black;
             /* color: #fbc56d; */
           }
+        }
+        .active-direct {
+          background: #fbc56d;
+          color: black;
         }
       }
       .cards {
@@ -125,10 +129,9 @@ export const ExperinceStyle = styled.div`
           grid-template-columns: 1fr;
         }
         @media (max-width: 600px) {
-          margin: auto
+          margin: auto;
         }
         .card {
-          /* border: 1px solid #fca31191; */
           padding: 20px;
           text-align: start;
 
@@ -157,6 +160,10 @@ export const ExperinceStyle = styled.div`
           &:hover {
             box-shadow: 0 5px 8px 4px #0202028c;
           }
+        }
+        .active-card {
+          box-shadow: inset 0 0 3px #000;
+          background: #00000057;
         }
       }
     }
