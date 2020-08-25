@@ -24,6 +24,16 @@ export const StacksStyle = styled.div`
       h1 {
         color: #fbc56d;
         font-size: 1.5rem;
+        position: relative;
+        &:before {
+          background: #fbc56d;
+          content: "";
+          width: 40%;
+          height: 3px;
+          left: 0;
+          bottom: -0px;
+          position: absolute;
+        }
       }
     }
 

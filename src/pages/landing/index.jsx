@@ -8,6 +8,7 @@ import Experience from "../../component/Experience";
 import Stack from "../../component/Stacks";
 import Hello from "../../component/Hello";
 import ContactMe from "../../component/ContactMe";
+import Works from '../../component/works'
 import Footer from "../../component/Footer";
 
 
@@ -18,8 +19,8 @@ const Landing = () => {
       <Header />
       <About />
       <Services />
-      {/* <Works /> */}
       <Experience />
+      <Works />
       <Stack />
       <Hello />
       <ContactMe />

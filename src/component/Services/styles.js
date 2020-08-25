@@ -17,7 +17,7 @@ export const ServicesStyle = styled.div`
         position: relative;
         width: max-content;
         margin: 30px auto;
-        color: #000;
+        color: #fff;
         &:before {
           background: #fca311;
           content: "";
@@ -31,7 +31,7 @@ export const ServicesStyle = styled.div`
         }
       }
       p {
-        color: #000;
+        color: #e5e5e5d4;
         font-size: 1rem;
       }
     }
