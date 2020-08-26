@@ -46,7 +46,7 @@ const Experience = () => {
               </FlexibleDiv>
             </FlexibleDiv>
             <div className="cards">
-              {cards.map(({ title, date, test, expKey }, i) => (
+              {cards.map(({ title, date, test, expKey, link }, i) => (
                 <div
                   onClick={() => handleSelectCard(i + 1)}
                   className={`card ${select === i + 1 ? "active-card" : ""}`}
@@ -60,6 +60,9 @@ const Experience = () => {
                   </div>
                   <div className="test">
                     <p>{test}</p>
+                  </div>
+                  <div className="link">
+                    <a href={link}>{link}</a>
                   </div>
                 </div>
               ))}

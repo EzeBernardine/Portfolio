@@ -109,7 +109,7 @@ export const ExperinceStyle = styled.div`
           padding: 20px;
           cursor: pointer;
           &:hover {
-            background: #fbc56d30;
+            background: #e5e5e540;
             color: black;
             /* color: #fbc56d; */
           }
@@ -134,7 +134,7 @@ export const ExperinceStyle = styled.div`
         .card {
           padding: 20px;
           text-align: start;
-
+          cursor: pointer;
           small,
           h2 {
             color: white;
@@ -155,7 +155,16 @@ export const ExperinceStyle = styled.div`
               width: max-content;
             }
           }
-          .test {
+          .link {
+            margin-top: 10px;
+            a {
+              color: #fbc56d;
+              font-family: "Charmonman", cursive;
+              text-decoration: underline;
+              &:hover {
+                color: #f9b341;
+              }
+            }
           }
           &:hover {
             box-shadow: 0 5px 8px 4px #0202028c;
