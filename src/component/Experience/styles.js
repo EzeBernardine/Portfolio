@@ -3,7 +3,7 @@ import star from "../../assets/images/exp2.jpg";
 
 export const ExperinceStyle = styled.div`
   padding: 100px 0;
-  /* background: #000000c4; */
+
   background: #14213d;
   .container {
     box-shadow: 31px 32px 36px 3px #0000008f;
@@ -25,13 +25,12 @@ export const ExperinceStyle = styled.div`
       bottom: 0;
       left: 0;
       background: #14213d9e;
-      /* background: #000000e8;/ */
     }
 
     p {
       font-size: 12px;
       color: #f2f0f0;
-      /* color: #c1c1c1; */
+
       text-align: left;
     }
 
@@ -105,13 +104,12 @@ export const ExperinceStyle = styled.div`
         span {
           color: white;
           background: #0000009e;
-          /* background: #3b3b3b9e; */
+
           padding: 20px;
           cursor: pointer;
           &:hover {
             background: #e5e5e540;
             color: black;
-            /* color: #fbc56d; */
           }
         }
         .active-direct {
@@ -160,8 +158,8 @@ export const ExperinceStyle = styled.div`
             a {
               color: #fbc56d;
               font-family: "Charmonman", cursive;
-              text-decoration: underline;
               &:hover {
+              text-decoration: underline;
                 color: #f9b341;
               }
             }

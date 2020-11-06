@@ -8,33 +8,45 @@ export const WorksStyle = styled.div`
     box-shadow: inset 0 0 112px #000000;
     section {
       .images {
-        width: 70%;
+        width: 80%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 20px;
+        align-items: center;
+        @media (max-width: 500px) {
+          width: 90%;
+        }
       }
-      .pictureFrame {
-        height: auto;
-        width: 200px;
-        /* &:nth-child(1) {
-          grid-area: 1 / 1/ 3/ 2;
+      .imageAnchor {
+        position: relative;
+        &:hover .name {
+          display: flex;
         }
-        &:nth-child(2) {
-          grid-area: 1 / 2/ 2/ 3;
-        }
-        &:nth-child(3) {
-          grid-area: 2 / 2/ 3/ 3;
-        }
-        &:nth-child(4) {
-          grid-area: 1 / 3 / 2 /4;
-        }
-        &:nth-child(4) {
-          grid-area: 2 / 3 / 3 /4;
-        } */
-        img {
-          height: 100%;
+        .pictureFrame {
+          height: auto;
           width: 100%;
-          object-fit: contain;
+          cursor: pointer;
+          border-radius: 6px;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+        .name {
+          font-size: 0.75rem;
+          position: absolute;
+          bottom: 0;
+          color: white;
+          padding: 5px 7px;
+          display: none;
+          border-radius: 0 5px 0 0;
+          background: #1f2229;
+          @media (max-width: 500px) {
+            display: flex;
+          }
         }
       }
     }

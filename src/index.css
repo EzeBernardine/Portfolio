@@ -6,13 +6,11 @@ body {
   padding: 0 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* height: 100vh; */
+
   padding: 0;
   margin: 0;
-
-  /* font-family: 'Lora', serif; */
 }
-*{
+* {
   box-sizing: border-box;
 }
 p,

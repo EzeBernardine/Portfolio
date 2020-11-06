@@ -3,11 +3,7 @@ import styled from "styled-components";
 export const RangeStyles = styled.div`
   .scale-range {
     width: 120px;
-    /* border: ${({ baseColor, centerColor = "black" }) =>
-      !(baseColor === centerColor) ? `2px solid ${centerColor}` : "none"}; */
     height: 120px;
-    /* min-width: 150px;
-    min-height: 150px; */
     display: flex;
     justify-content: center;
     align-items: center;

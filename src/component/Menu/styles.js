@@ -48,7 +48,6 @@ export const MenuStyle = styled.div`
     margin: 0 10px;
     font-size: 12px;
     min-width: max-content;
-    /* font-weight: bold; */
     cursor: pointer;
     @media (max-width: 600px) {
       margin: 5px auto;
@@ -57,7 +56,6 @@ export const MenuStyle = styled.div`
       padding: 10px 0;
       &:hover {
         background: #e5e5e5;
-        /* background: #fca311cc; */
       }
     }
   }
@@ -148,14 +146,14 @@ export const MenuStyle = styled.div`
     @media (max-width: 600px) {
       margin: 15px 0 0;
       background: #04040487;
-      /* background: #e5e5e530; */
       width: 100%;
       position: absolute;
       top: 45px;
       border-bottom: 1px solid #fbc56d;
       overflow: hidden;
-      display: ${props => (props.menuDiplay === undefined ? " none" : "grid")};
-      animation: ${props =>
+      display: ${(props) =>
+        props.menuDiplay === undefined ? " none" : "grid"};
+      animation: ${(props) =>
         props.menuDiplay
           ? "rollDown .2s  ease-in forwards "
           : " rollUp .3s  ease-in-out   forwards"};
@@ -172,7 +170,6 @@ export const MenuStyle = styled.div`
       font-size: 1.4rem;
     }
     @media (max-width: 600px) {
-      /* padding: 0 10vw; */
       width: 80vw;
     }
   }

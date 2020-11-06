@@ -7,22 +7,20 @@ const Works = () => {
     {
       img: require("../../assets/images/experience/EmBED(1).png"),
       expKey: 1,
+      href: "https://embed.ng/",
+      name: "EmBED",
     },
     {
-      img: require("../../assets/images/experience/Learner(1).png"),
+      img: require("../../assets/images/experience/suregift.png"),
       expKey: 13,
+      href: "https://suregifts.com.ng/",
+      name: "Suregift",
     },
     {
-      img: require("../../assets/images/experience/Learner(2).png"),
+      img: require("../../assets/images/experience/lf.png"),
       expKey: 14,
-    },
-    {
-      img: require("../../assets/images/experience/Parent(1).png"),
-      expKey: 15,
-    },
-    {
-      img: require("../../assets/images/experience/EmBED(2).png"),
-      expKey: 12,
+      href: "https://learnfactory.com.ng/",
+      name: "Learnfactory",
     },
   ];
 
@@ -33,15 +31,29 @@ const Works = () => {
         <section>
           <FlexibleDiv alignItems="first baseline">
             <div className="images">
-              {collection.map(({ img, expKey, up, right, center, down }) => (
-                <div className="pictureFrame" key={expKey}>
-                  <img src={img} alt="" />
-                </div>
+              {collection.map(({ img, expKey, href, name }) => (
+                <a
+                  href={href}
+                  target="_blank"
+                  className="imageAnchor"
+                  key={expKey}
+                >
+                  <FlexibleDiv className="pictureFrame">
+                    <img src={img} alt="" />
+                  </FlexibleDiv>
+                  <FlexibleDiv
+                    justifyContent="flex-start"
+                    className="name"
+                    flexWidth="max-content"
+                    flexHeight="max-content"
+                  >
+                    <sub>{name}</sub>
+                  </FlexibleDiv>
+                </a>
               ))}
             </div>
           </FlexibleDiv>
         </section>
-
       </div>
     </WorksStyle>
   );

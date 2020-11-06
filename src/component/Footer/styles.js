@@ -9,13 +9,17 @@ export const FooterStyle = styled.div`
     display: flex;
     li {
       margin: 0 20px;
-      background: #1f2229;
+      background: #121417;
       border-radius: 100%;
       height: 40px;
       width: 40px;
       display: flex;
       justify-content: center;
+      cursor: pointer;
       align-items: center;
+      &:hover {
+        background: #1f2229;
+      }
       a {
         color: #fbc56d;
       }

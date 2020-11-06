@@ -23,9 +23,7 @@ export const ServicesStyle = styled.div`
           content: "";
           width: 40%;
           height: 3px;
-          /* right: 0; */
           left: 0;
-          /* margin: auto; */
           bottom: 5px;
           position: absolute;
         }
@@ -62,6 +60,7 @@ export const ServicesStyle = styled.div`
             height: 100%;
             width: 100%;
             position: absolute;
+            opacity: .6;
             img {
               height: 100%;
               width: 100%;
@@ -69,7 +68,6 @@ export const ServicesStyle = styled.div`
             }
           }
           .content {
-            /* background: #0908087a; */
             background: #ffffffc9;
             height: 100%;
             width: 100%;
