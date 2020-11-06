@@ -62,7 +62,7 @@ const Experience = () => {
                     <p>{test}</p>
                   </div>
                   <div className="link">
-                    <a href={link} target='_blank'>{name}</a>
+                    <a href={link} target='_blank' rel="noopener noreferrer">{name}</a>
                   </div>
                 </div>
               ))}

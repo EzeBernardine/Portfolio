@@ -13,6 +13,7 @@ const Footer = () => {
         <ul>
           <li>
             <a
+              rel="noopener noreferrer"
               target="_blank"
               href="https://web.facebook.com/profile.php?id=100008556884999"
             >
@@ -20,12 +21,17 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://twitter.com/LadyBCodes">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://twitter.com/LadyBCodes"
+            >
               <AiOutlineTwitter />
             </a>
           </li>
           <li>
             <a
+              rel="noopener noreferrer"
               target="_blank"
               href="https://www.instagram.com/ezebernardinemay/"
             >
@@ -33,7 +39,11 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://medium.com/@demayous1">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://medium.com/@demayous1"
+            >
               <FaMediumM />
             </a>
           </li>

@@ -24,7 +24,7 @@ const Works = () => {
     },
   ];
 
-  const stack = [];
+
   return (
     <WorksStyle>
       <div className="container">
@@ -35,6 +35,7 @@ const Works = () => {
                 <a
                   href={href}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="imageAnchor"
                   key={expKey}
                 >
