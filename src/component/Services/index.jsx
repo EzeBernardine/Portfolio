@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { ServicesStyle } from "./styles";
 import { Flex } from "../Box/flexibleDiv.styles";
 

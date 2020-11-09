@@ -54,7 +54,7 @@ const MsallMenu = ({ about, services, skills, experience, contact }) => {
             <ul>
               <li>
                 <button>
-                  <a href="#">Home</a>
+                  <a href="/">Home</a>
                 </button>
               </li>
               <li onClick={() => executeScrollAbout("about")}>
