@@ -26,6 +26,7 @@ const Blog = () => {
               key={expKey}
             >
               <Flex className="blog" width="300px">
+                <small className="url">Copy URL</small>
                 <Flex justifyContent="flex-start">
                   <h2 className="title">{title}</h2>
 
@@ -34,7 +35,7 @@ const Blog = () => {
                   </Flex>
 
                   <Flex width="auto" height="auto" className="subTitle">
-                    <p> {subTitle}</p>
+                    <sub> {subTitle}</sub>
                   </Flex>
                 </Flex>
               </Flex>

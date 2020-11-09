@@ -7,10 +7,18 @@ export const MenuStyle = styled.div`
     margin: 0;
   }
   header {
-    background: transparent;
+    background: ${({ menuScrollPosition }) =>
+      menuScrollPosition === undefined
+        ? "#14213d"
+        : menuScrollPosition <= 500
+        ? "transparent"
+        : menuScrollPosition > 500 && menuScrollPosition <= 2900
+        ? "#14213d"
+        : "#1f2229"};
+    transition: 400ms linear;
     margin: 0;
     height: 60px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -57,9 +65,9 @@ export const MenuStyle = styled.div`
       width: 100%;
       border-radius: 50px;
       padding: 10px 0;
-      &:hover {
+      /* &:hover {
         background: #e5e5e5;
-      }
+      } */
     }
     &:hover {
       background: #fbc56d91;
@@ -70,15 +78,18 @@ export const MenuStyle = styled.div`
     outline: none;
   }
   header ul li {
-    * {
+    button,
+    a {
       color: white;
       background: none;
       padding: 0;
       border: none;
+      cursor: pointer;
       text-decoration: none;
     }
     &:hover {
-      * {
+      button,
+      a {
         @media (max-width: 600px) {
           color: #14213d;
         }

@@ -7,15 +7,13 @@ export const MenuStyle = styled.div`
     margin: 0;
   }
   header {
- 
     background: #14213d;
     margin: 0;
     height: 60px;
-    /* position: absolute; */
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    
     z-index: 11;
     width: 100%;
     display: flex;
@@ -47,10 +45,13 @@ export const MenuStyle = styled.div`
 
   header ul li {
     list-style: none;
-    margin: 0 10px;
+    margin: 0 2px;
     font-size: 12px;
+    border-radius: 3px;
+    overflow: hidden;
     min-width: max-content;
     cursor: pointer;
+    padding: 5px 10px;
     @media (max-width: 600px) {
       margin: 5px auto;
       width: 100%;
@@ -60,44 +61,27 @@ export const MenuStyle = styled.div`
         background: #e5e5e5;
       }
     }
-  }
-  header ul li {
-    * {
-      position: relative;
-      &:before {
-        background: #fff;
-        content: "";
-        width: 0%;
-        right: 0;
-        left: 0;
-        margin: auto;
-        height: 1px;
-        position: absolute;
-        transition: 200ms ease-in-out;
-        bottom: -5px;
-      }
-      &:hover {
-        @media (min-width: 600px) {
-          &:before {
-            width: 100%;
-          }
-        }
-      }
+    &:hover {
+      background: #fbc56d91;
     }
   }
+
   header ul li *:active {
     outline: none;
   }
   header ul li {
-    * {
+    button,
+    a {
       color: white;
       background: none;
       padding: 0;
+      cursor: pointer;
       border: none;
       text-decoration: none;
     }
     &:hover {
-      * {
+      button,
+      a {
         @media (max-width: 600px) {
           color: #14213d;
         }

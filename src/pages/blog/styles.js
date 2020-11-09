@@ -6,14 +6,32 @@ export const BlogStyle = styled.div`
     min-height: 80vh;
   }
   .blogs {
-    margin: 100px 0;
+    margin: 10rem 0;
     .blog {
       padding: 30px;
-      box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.11);
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 0 1em 0 rgba(168, 171, 174, 0.15);
       cursor: pointer;
+      transition: 100ms linear;
       &:hover {
-        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
-          0 1px 3px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 0 2rem rgba(168, 171, 174, 0.15);
+        transform: translateY(-5px);
+      }
+      .url {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #fbc56d;
+        padding: 5px 7px;
+        font-size: 0.6rem;
+        font-weight: 550;
+        border-radius: 2px;
+        color: white;
+        &:hover {
+          background: #ddad5e;
+        }
       }
       .title {
         color: #3b3a3a;
@@ -31,7 +49,7 @@ export const BlogStyle = styled.div`
         color: #3b3a3a;
         text-align: start;
         font-size: 1rem;
-        font-weight: inherit
+        font-weight: inherit;
       }
     }
   }

@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { MenuStyle } from "./styles";
 
-const Menu = ({ about, services, skills, experience, portfolio, contact }) => {
+const Menu = ({ about, services, skills, experience, contact }) => {
   const [menuDiplay, setMenuDisplay] = useState(undefined);
 
   const handleDisplayMenu = () => setMenuDisplay(!menuDiplay);
@@ -11,7 +11,6 @@ const Menu = ({ about, services, skills, experience, portfolio, contact }) => {
       executeScrollServices = () => scrollToRef(services),
       executeScrollSkills = () => scrollToRef(skills),
       executeScrollExperience = () => scrollToRef(experience),
-      executeScrollPortfolio = () => scrollToRef(portfolio),
       executeScrollContact = () => scrollToRef(contact);
 
   return (

@@ -1,18 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { ServicesStyle } from "./styles";
 import { Flex } from "../Box/flexibleDiv.styles";
 
 const Services = ({ services }) => {
-  const card = useRef();
-
-  const handleScroll = () =>
-    // console.dir(card.current.clientHeight);
-
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll, { passive: true });
-
-      return () => window.removeEventListener("scroll", handleScroll);
-    });
 
   const myServices = [
     {
@@ -31,11 +21,11 @@ const Services = ({ services }) => {
     },
   ];
   return (
-    <ServicesStyle onScroll={() => handleScroll()} ref={services}>
+    <ServicesStyle ref={services}>
       <div className="container">
         <header>
           <h1>SERVICES</h1>
-          <p ref={card}>
+          <p >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
             vitae deleniti cum assumenda esse dicta cupiditate voluptatum magnam
             voluptatibus consequuntur error doloribus distinctio harum

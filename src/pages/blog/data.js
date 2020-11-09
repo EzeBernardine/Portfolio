@@ -1,5 +1,5 @@
-import React from "react";
-import ReactMarkdown from "react-markdown";
+
+
 const blogs = [
   {
     title: "Smooth Bezier Curve",
@@ -36,7 +36,7 @@ const blogs = [
   {
     title: "SVG Scalable Vector Graphics",
     tag: ["svg"],
-    expKey: 3,
+    expKey: 4,
     herf:
       "https://medium.com/@demayous1/svg-scalable-vector-graphics-b55398543ffb",
     subTitle: "The Anatomy of an SVG",
