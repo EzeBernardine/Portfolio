@@ -2,10 +2,10 @@ import React from "react";
 import { AboutStyle } from "./styles";
 import { Flex } from "../Box/flexibleDiv.styles";
 import Button from "../Button";
+import pdf from "../../assets/images/My_Resume.pdf";
+import { ButtonStyled } from "../Button/styles";
 
-const Menu = ({about}) => {
-
-
+const Menu = ({ about }) => {
   return (
     <AboutStyle>
       <Flex className="container" ref={about}>
@@ -20,16 +20,20 @@ const Menu = ({about}) => {
               explicabo fuga ullam doloribus nam aliquam possimus excepturi
               quod, magnam id quibusdam voluptatibus.
             </p>
-            <Flex className="btns" justifyContent="space-around">
-              <Button
-                text="Download CV"
-                bgColor="#E5E5E5"
-                color="#FCA311"
-                hColor="#FCA311"
-                type="button"
-                click={() => []}
-              />
-              <Button text="View Works" click={() => []} type="button" />
+            <Flex
+              className="btns"
+              justifyContent="space-around"
+              alignItems="stretch"
+            >
+              <ButtonStyled text="Download CV" className="button-container">
+                <a
+                  href={pdf}
+                  download="bernardine's_resume.pdf"
+                  className="button"
+                >
+                  Download CV
+                </a>
+              </ButtonStyled>
             </Flex>
           </div>
         </div>

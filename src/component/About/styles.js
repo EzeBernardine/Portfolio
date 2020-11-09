@@ -10,7 +10,6 @@ export const AboutStyle = styled.div`
   background-blend-mode: lighten;
   padding: 100px 0;
 
-  
   .about {
     width: 40%;
     @media (max-width: 660px) {
@@ -21,8 +20,8 @@ export const AboutStyle = styled.div`
       width: max-content;
       margin: auto;
       &:before {
-        background: #FCA311;
-        content: '';
+        background: #fca311;
+        content: "";
         width: 40%;
         height: 3px;
         bottom: 5px;
@@ -56,11 +55,16 @@ export const AboutStyle = styled.div`
       }
       .btns {
         margin-top: 30px;
+        .button-container {
+          display: flex;
+          align-items: stretch;
+          .button {
+            display: flex;
+            align-items: center;
+          }
+        }
         @media (min-width: 660px) {
           justify-content: flex-start;
-          button {
-            margin-right: 20px;
-          }
         }
       }
     }

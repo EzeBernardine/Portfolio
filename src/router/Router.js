@@ -11,8 +11,8 @@ const Router = () => (
     <div className="AppRoute">
       <Switch>
         <Route path="/" component={Landing} exact={true} />
-        <Route path="/resume" component={Resume} exact={true} />
-        <Route path="/blog" component={Blog} exact={true} />
+        <Route path="/resume" component={Resume} />
+        <Route path="/blog" component={Blog} />
         <Route component={NotFound} />
       </Switch>
     </div>

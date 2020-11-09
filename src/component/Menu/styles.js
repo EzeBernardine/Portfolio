@@ -47,7 +47,7 @@ export const MenuStyle = styled.div`
     font-family: "Ruthie", cursive;
     font-family: "Charmonman", cursive;
     @media (min-width: 600px) {
-      margin-left: 10%;
+      margin-left: 16%;
     }
   }
 
@@ -70,7 +70,7 @@ export const MenuStyle = styled.div`
       } */
     }
     &:hover {
-      background: #fbc56d91;
+      background: #aa8445;
     }
   }
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const variantSize = size =>
+const variantSize = (size) =>
   size
     ? size === "sm"
       ? "0.567rem"
@@ -11,7 +11,7 @@ const variantSize = size =>
       : ""
     : "0.775rem";
 
-const variantIconSize = size =>
+const variantIconSize = (size) =>
   size
     ? size === "sm"
       ? "small"
@@ -36,51 +36,54 @@ const variantPadding = (size, hasIcon) => {
   }
 };
 
-export const ButtonStyled = styled.button`
-  border: none;
-  border-radius: ${({ borderRadius }) => (borderRadius ? borderRadius : "4px")};
-  padding: ${({ size, hasIcon }) => variantPadding(size, hasIcon)};
-  @media (max-width: 660px) {
-    padding: 0.5rem 0.9rem;
-  }
-  font-size: ${({ size }) => variantSize(size)};
-  letter-spacing: 0.02857em;
-  width: ${({ fullwidth }) => (fullwidth ? "100%" : "max-content")};
-  color: ${({ color }) => color || "#fff"};
-  background-color: ${({ bgColor }) => bgColor || "#FCA311"};
-  text-transform: uppercase;
-  cursor: pointer;
-  font-weight: bold;
-  outline: 0;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-
-  &:active,
-  &:focus {
-    outline: 0;
+export const ButtonStyled = styled.div`
+  .button {
     border: none;
-  }
+    border-radius: ${({ borderRadius }) =>
+      borderRadius ? borderRadius : "4px"};
+    padding: ${({ size, hasIcon }) => variantPadding(size, hasIcon)};
+    @media (max-width: 660px) {
+      padding: 0.5rem 0.9rem;
+    }
+    font-size: ${({ size }) => variantSize(size)};
+    letter-spacing: 0.02857em;
+    width: ${({ fullwidth }) => (fullwidth ? "100%" : "max-content")};
+    color: ${({ color }) => color || "#fff"};
+    background-color: ${({ bgColor }) => bgColor || "#FCA311"};
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    outline: 0;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 
-  &:hover {
-    background: ${({ bgColor, hColor }) =>
-      hColor ? hColor : bgColor || "#E5E5E5"};
-    color: ${({ bgColor }) => (bgColor ? bgColor : "#FCA311")};
-  }
+    &:active,
+    &:focus {
+      outline: 0;
+      border: none;
+    }
 
-  &:disabled {
-    background: grey;
-    cursor: not-allowed;
-  }
+    &:hover {
+      background: ${({ bgColor, hColor }) =>
+        hColor ? hColor : bgColor || "#E5E5E5"};
+      color: ${({ bgColor }) => (bgColor ? bgColor : "#FCA311")};
+    }
 
-  &::-moz-focus-inner {
-    border: 0;
-  }
+    &:disabled {
+      background: grey;
+      cursor: not-allowed;
+    }
 
-  .icon {
-    padding-left: 1rem;
+    &::-moz-focus-inner {
+      border: 0;
+    }
 
-    svg {
-      font-size: ${({ size }) => variantIconSize(size)};
-      font-weight: 600;
+    .icon {
+      padding-left: 1rem;
+
+      svg {
+        font-size: ${({ size }) => variantIconSize(size)};
+        font-weight: 600;
+      }
     }
   }
 `;

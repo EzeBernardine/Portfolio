@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { MenuStyle } from "./styles";
+import { NavLink } from "react-router-dom";
+import pdf from "../../assets/images/My_Resume.pdf";
 
 const Menu = ({ about, services, skills, experience, contact }) => {
   const [menuDiplay, setMenuDisplay] = useState(undefined);
@@ -7,11 +9,11 @@ const Menu = ({ about, services, skills, experience, contact }) => {
   const handleDisplayMenu = () => setMenuDisplay(!menuDiplay);
 
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 80);
-    const executeScrollAbout = () => scrollToRef(about),
-      executeScrollServices = () => scrollToRef(services),
-      executeScrollSkills = () => scrollToRef(skills),
-      executeScrollExperience = () => scrollToRef(experience),
-      executeScrollContact = () => scrollToRef(contact);
+  const executeScrollAbout = () => scrollToRef(about),
+    executeScrollServices = () => scrollToRef(services),
+    executeScrollSkills = () => scrollToRef(skills),
+    executeScrollExperience = () => scrollToRef(experience),
+    executeScrollContact = () => scrollToRef(contact);
 
   return (
     <MenuStyle menuDiplay={menuDiplay}>
@@ -30,7 +32,7 @@ const Menu = ({ about, services, skills, experience, contact }) => {
             <ul>
               <li>
                 <button>
-                  <a href="/">Home</a>
+                  <NavLink to="/">Home</NavLink>
                 </button>
               </li>
               <li onClick={() => executeScrollAbout("about")}>
@@ -49,13 +51,15 @@ const Menu = ({ about, services, skills, experience, contact }) => {
                 <button>Contact</button>
               </li>
               <li>
-                <button>
-                  <a href="./resume">Resume</a>
+                <button onClick={() => window.open(pdf)}>
+                  {/* <a href={pdf} target="_blank" rel="noopener noreferrer"> */}
+                  Resume
+                  {/* </a> */}
                 </button>
               </li>
               <li>
                 <button>
-                  <a href="./blog">Blog</a>
+                  <NavLink to="./blog">Blog</NavLink>
                 </button>
               </li>
             </ul>

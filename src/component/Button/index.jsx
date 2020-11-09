@@ -2,9 +2,8 @@ import React from "react";
 import { ButtonStyled } from "./styles";
 import propTypes from "prop-types";
 
-
 const Button = React.forwardRef(
-  ({ type, text, loading, disabled, click, icon, ...otherProps }, ref) => {
+  ({ type, text, disabled, click, icon, ...otherProps }, ref) => {
     const renderText = (
       <span className={"text__icon"}>
         <span>{text}</span>
@@ -13,15 +12,17 @@ const Button = React.forwardRef(
     );
 
     return (
-      <ButtonStyled
-        ref={ref}
-        type={type}
-        onClick={click}
-        hasIcon={!!icon}
-        disabled={disabled}
-        {...otherProps}
-      >
-        {loading ? <span>Loading</span> : !icon ? text : renderText}
+      <ButtonStyled {...otherProps}>
+        <button
+          className="button"
+          ref={ref}
+          type={type}
+          onClick={click}
+          hasIcon={!!icon}
+          disabled={disabled}
+        >
+          {!icon ? text : renderText}
+        </button>
       </ButtonStyled>
     );
   }
@@ -35,7 +36,7 @@ Button.propTypes = {
   disabled: propTypes.bool,
   loading: propTypes.bool,
   variant: propTypes.string,
-  size: propTypes.string
+  size: propTypes.string,
 };
 
 export default Button;

@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { MenuStyle } from "./styles";
+import { NavLink } from "react-router-dom";
+import pdf from "../../assets/images/My_Resume.pdf";
 
 const MsallMenu = ({ about, services, skills, experience, contact }) => {
   const [menuDiplay, setMenuDisplay] = useState(undefined);
-  let [menuScrollPosition, setMenuScrollPosition] = useState(undefined);
+  let [menuScrollPosition, setMenuScrollPosition] = useState(window.scrollY);
 
+  
   /**
    * determines of the menu should be displayed or not and on which screen size.
    */
@@ -26,7 +29,6 @@ const MsallMenu = ({ about, services, skills, experience, contact }) => {
     executeScrollSkills = () => scrollToRef(skills),
     executeScrollExperience = () => scrollToRef(experience),
     executeScrollContact = () => scrollToRef(contact);
-
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -54,7 +56,7 @@ const MsallMenu = ({ about, services, skills, experience, contact }) => {
             <ul>
               <li>
                 <button>
-                  <a href="/">Home</a>
+                  <NavLink to="/">Home</NavLink>
                 </button>
               </li>
               <li onClick={() => executeScrollAbout("about")}>
@@ -73,13 +75,15 @@ const MsallMenu = ({ about, services, skills, experience, contact }) => {
                 <button>Contact</button>
               </li>
               <li>
-                <button>
-                  <a href="./resume">Resume</a>
+                <button onClick={() => window.open(pdf)}>
+                  {/* <a href={pdf} target="_blank" rel="noopener noreferrer"> */}
+                  Resume
+                  {/* </a> */}
                 </button>
               </li>
               <li>
                 <button>
-                  <a href="./blog">Blog</a>
+                  <NavLink to="./blog">Blog</NavLink>
                 </button>
               </li>
             </ul>

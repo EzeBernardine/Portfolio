@@ -57,12 +57,12 @@ export const MenuStyle = styled.div`
       width: 100%;
       border-radius: 50px;
       padding: 10px 0;
-      &:hover {
+      /* &:hover {
         background: #e5e5e5;
-      }
+      } */
     }
     &:hover {
-      background: #fbc56d91;
+      background: #aa8445;
     }
   }
 

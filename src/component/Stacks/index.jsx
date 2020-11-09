@@ -34,6 +34,11 @@ const Stack = ({skills}) => {
       name: "Styled Component",
       range: 95,
       expKey: 16
+    },
+    {
+      name: "SVG",
+      range: 70,
+      expKey: 16
     }
   ];
   return (

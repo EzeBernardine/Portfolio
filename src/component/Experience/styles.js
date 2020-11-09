@@ -113,7 +113,7 @@ export const ExperinceStyle = styled.div`
           }
         }
         .active-direct {
-          background: #fbc56d;
+          background: #aa8445;
           color: black;
         }
       }
