@@ -1,9 +1,9 @@
 import React from "react";
 import { StacksStyle } from "./styles";
-import { FlexibleDiv } from "../Box/flexibleDiv.styles";
+import { Flex } from "../Box/flexibleDiv.styles";
 import Scale from "../Scale";
 
-const Stack = () => {
+const Stack = ({skills}) => {
   const Stacks = [
     {
       name: "HTML",
@@ -38,7 +38,7 @@ const Stack = () => {
   ];
   return (
     <StacksStyle>
-      <FlexibleDiv className="container">
+      <Flex className="container" ref={skills}>
         <div className="test">
           <h1>My Skills</h1>
         </div>
@@ -47,7 +47,7 @@ const Stack = () => {
             <Scale scale={scale} key={scale.expKey} />
           ))}
         </section>
-      </FlexibleDiv>
+      </Flex>
     </StacksStyle>
   );
 };

@@ -81,10 +81,10 @@ export const LandingStyle = styled.div`
   }
   .captionDiv {
     overflow: hidden;
-    h2 {
+    h2{
       margin: auto;
-      font-family: "Ruthie", cursive;
-      font-size: 5rem;
+      font-family: "Charmonman",cursive;
+      font-size: 4rem;
       word-spacing: nowrap;
       line-height: inherit;
       white-space: nowrap;
@@ -92,7 +92,22 @@ export const LandingStyle = styled.div`
       font-weight: lighter;
       text-align: start;
       @media (max-width: 600px) {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+    }
+    h3 {
+      font-size: 2rem;
+      word-spacing: nowrap;
+      line-height: inherit;
+      white-space: nowrap;
+      color: #fbc56d;
+      font-weight: inherit;
+      text-align: start;
+      margin: 0;
+      font-family: "Charmonman",cursive;
+      @media (max-width: 600px) {
+        font-size: 1.5rem;
         text-align: center;
       }
     }

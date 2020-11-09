@@ -10,6 +10,7 @@ const Landing = () => {
             <aside className="learning">
               <div className="captionDiv">
                 <h2>I'm Bernardine</h2>
+                <h3>A Front-end Developer</h3>
               </div>
               <div className="moreDetail">
                 <p>

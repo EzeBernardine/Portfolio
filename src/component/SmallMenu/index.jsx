@@ -1,18 +1,18 @@
 import React, { useState, useRef } from "react";
 import { MenuStyle } from "./styles";
 
-const MsallMenu = ({ about, services, skills, experience, portfolio, contact }) => {
+const Menu = ({ about, services, skills, experience, portfolio, contact }) => {
   const [menuDiplay, setMenuDisplay] = useState(undefined);
 
   const handleDisplayMenu = () => setMenuDisplay(!menuDiplay);
 
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 80);
-  const executeScrollAbout = () => scrollToRef(about),
-    executeScrollServices = () => scrollToRef(services),
-    executeScrollSkills = () => scrollToRef(skills),
-    executeScrollExperience = () => scrollToRef(experience),
-    executeScrollPortfolio = () => scrollToRef(portfolio),
-    executeScrollContact = () => scrollToRef(contact);
+    const executeScrollAbout = () => scrollToRef(about),
+      executeScrollServices = () => scrollToRef(services),
+      executeScrollSkills = () => scrollToRef(skills),
+      executeScrollExperience = () => scrollToRef(experience),
+      executeScrollPortfolio = () => scrollToRef(portfolio),
+      executeScrollContact = () => scrollToRef(contact);
 
   return (
     <MenuStyle menuDiplay={menuDiplay}>
@@ -30,7 +30,9 @@ const MsallMenu = ({ about, services, skills, experience, portfolio, contact }) 
           <div className="linkDiv">
             <ul>
               <li>
-                <button>Home</button>
+                <button>
+                  <a href="/">Home</a>
+                </button>
               </li>
               <li onClick={() => executeScrollAbout("about")}>
                 <button>About</button>
@@ -64,4 +66,4 @@ const MsallMenu = ({ about, services, skills, experience, portfolio, contact }) 
     </MenuStyle>
   );
 };
-export default MsallMenu;
+export default Menu;

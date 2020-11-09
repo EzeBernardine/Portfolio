@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import { ExperinceStyle } from "./styles";
-import { FlexibleDiv } from "../Box/flexibleDiv.styles";
+import { Flex } from "../Box/flexibleDiv.styles";
 import { cards } from "./data";
-const Experience = () => {
+const Experience = ({experience}) => {
   const [select, setSelect] = useState(1);
   const handleSelectCard = (number) => setSelect(number);
 
   return (
     <ExperinceStyle>
-      <div className="container">
+      <div className="container" ref={experience}>
         <div className="overlay"></div>
         <div className="head">
-          <FlexibleDiv className="top" justifyContent="space-between">
-            <FlexibleDiv className="myName">
+          <Flex className="top" justifyContent="space-between">
+            <Flex className="myName">
               <h1>B</h1>
-            </FlexibleDiv>
+            </Flex>
             <div className="brief">
               <p>
                 <b>Act as if what you do makes a difference. It does.</b> <br />
@@ -32,19 +32,19 @@ const Experience = () => {
                 amet, hic quam!
               </p>
             </div>
-          </FlexibleDiv>
-          <FlexibleDiv className="wrap" flexWrap="nowrap" alignItems="center">
-            <FlexibleDiv className="direct" justifyContent="space-between">
-              <FlexibleDiv onClick={() => handleSelectCard(1)}>
+          </Flex>
+          <Flex className="wrap" flexWrap="nowrap" alignItems="center">
+            <Flex className="direct" justifyContent="space-between">
+              <Flex onClick={() => handleSelectCard(1)}>
                 <span className={select === 1 ? "active-direct" : ""}>1</span>
-              </FlexibleDiv>
-              <FlexibleDiv onClick={() => handleSelectCard(2)}>
+              </Flex>
+              <Flex onClick={() => handleSelectCard(2)}>
                 <span className={select === 2 ? "active-direct" : ""}>2</span>
-              </FlexibleDiv>
-              <FlexibleDiv onClick={() => handleSelectCard(3)}>
+              </Flex>
+              <Flex onClick={() => handleSelectCard(3)}>
                 <span className={select === 3 ? "active-direct" : ""}>3</span>
-              </FlexibleDiv>
-            </FlexibleDiv>
+              </Flex>
+            </Flex>
             <div className="cards">
               {cards.map(({ title, date, test, expKey, link, name }, i) => (
                 <div
@@ -67,7 +67,7 @@ const Experience = () => {
                 </div>
               ))}
             </div>
-          </FlexibleDiv>
+          </Flex>
         </div>
       </div>
     </ExperinceStyle>

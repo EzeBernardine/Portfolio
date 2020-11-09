@@ -1,6 +1,6 @@
 import React from "react";
 import { WorksStyle } from "./styles";
-import { FlexibleDiv } from "../Box/flexibleDiv.styles";
+import { Flex } from "../Box/flexibleDiv.styles";
 
 const Works = () => {
   const collection = [
@@ -29,7 +29,7 @@ const Works = () => {
     <WorksStyle>
       <div className="container">
         <section>
-          <FlexibleDiv alignItems="first baseline">
+          <Flex alignItems="first baseline">
             <div className="images">
               {collection.map(({ img, expKey, href, name }) => (
                 <a
@@ -39,21 +39,21 @@ const Works = () => {
                   className="imageAnchor"
                   key={expKey}
                 >
-                  <FlexibleDiv className="pictureFrame">
+                  <Flex className="pictureFrame">
                     <img src={img} alt="" />
-                  </FlexibleDiv>
-                  <FlexibleDiv
+                  </Flex>
+                  <Flex
                     justifyContent="flex-start"
                     className="name"
-                    flexWidth="max-content"
-                    flexHeight="max-content"
+                    width="max-content"
+                    height="max-content"
                   >
                     <sub>{name}</sub>
-                  </FlexibleDiv>
+                  </Flex>
                 </a>
               ))}
             </div>
-          </FlexibleDiv>
+          </Flex>
         </section>
       </div>
     </WorksStyle>

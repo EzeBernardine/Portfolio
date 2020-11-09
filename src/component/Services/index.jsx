@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import { ServicesStyle } from "./styles";
-import { FlexibleDiv } from "../Box/flexibleDiv.styles";
+import { Flex } from "../Box/flexibleDiv.styles";
 
-const Services = () => {
+const Services = ({ services }) => {
   const card = useRef();
 
   const handleScroll = () =>
@@ -14,24 +14,24 @@ const Services = () => {
       return () => window.removeEventListener("scroll", handleScroll);
     });
 
-  const services = [
+  const myServices = [
     {
       name: "Web Development",
       about:
         "  voluptatibus consequuntur error doloribus distinctio harum      provident, blanditiis fugit in laboriosam consectetur",
       img: require("../../assets/images/dev.png"),
-      exp_key: 1
+      exp_key: 1,
     },
     {
       name: "Desktop Development",
       about:
         "  voluptatibus consequuntur error doloribus distinctio harum      provident, blanditiis fugit in laboriosam consectetur",
       img: require("../../assets/images/desktop.jpg"),
-      exp_key: 2
-    }
+      exp_key: 2,
+    },
   ];
   return (
-    <ServicesStyle onScroll={() => handleScroll()}>
+    <ServicesStyle onScroll={() => handleScroll()} ref={services}>
       <div className="container">
         <header>
           <h1>SERVICES</h1>
@@ -44,8 +44,8 @@ const Services = () => {
         </header>
 
         <section>
-          <FlexibleDiv className="cards" justifyContent="space-around">
-            {services.map(({ img, name, about, exp_key }) => (
+          <Flex className="cards" justifyContent="space-around">
+            {myServices.map(({ img, name, about, exp_key }) => (
               <div className="card" key={exp_key}>
                 <div className="imgWrap">
                   <img src={img} alt="" />
@@ -56,7 +56,7 @@ const Services = () => {
                 </div>
               </div>
             ))}
-          </FlexibleDiv>
+          </Flex>
         </section>
       </div>
     </ServicesStyle>

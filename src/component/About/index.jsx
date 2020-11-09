@@ -1,12 +1,14 @@
 import React from "react";
 import { AboutStyle } from "./styles";
-import { FlexibleDiv } from "../Box/flexibleDiv.styles";
+import { Flex } from "../Box/flexibleDiv.styles";
 import Button from "../Button";
 
-const Menu = () => {
+const Menu = ({about}) => {
+
+
   return (
     <AboutStyle>
-      <FlexibleDiv className="container">
+      <Flex className="container" ref={about}>
         <div className="about">
           <h1>About Me</h1>
         </div>
@@ -18,7 +20,7 @@ const Menu = () => {
               explicabo fuga ullam doloribus nam aliquam possimus excepturi
               quod, magnam id quibusdam voluptatibus.
             </p>
-            <FlexibleDiv className="btns" justifyContent="space-around">
+            <Flex className="btns" justifyContent="space-around">
               <Button
                 text="Download CV"
                 bgColor="#E5E5E5"
@@ -28,10 +30,10 @@ const Menu = () => {
                 click={() => []}
               />
               <Button text="View Works" click={() => []} type="button" />
-            </FlexibleDiv>
+            </Flex>
           </div>
         </div>
-      </FlexibleDiv>
+      </Flex>
     </AboutStyle>
   );
 };

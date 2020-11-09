@@ -1,17 +1,17 @@
 import React from "react";
 import { HelloStyle } from "./styles";
-import { FlexibleDiv } from "../Box/flexibleDiv.styles";
+import { Flex } from "../Box/flexibleDiv.styles";
 import Button from "../Button";
 
 const Hello = () => {
   return (
     <HelloStyle>
-      <FlexibleDiv>
+      <Flex>
         <div>
           {" "}
           <p>Have any Project in Mind?</p>
           <h1> JUST SAY HELLO</h1>
-          <FlexibleDiv className="btn">
+          <Flex className="btn">
             <Button
               text="Hire Me"
               bgColor="transparent"
@@ -20,9 +20,9 @@ const Hello = () => {
               color="#E5E5E5"
               click={() => []}
             />
-          </FlexibleDiv>
+          </Flex>
         </div>
-      </FlexibleDiv>
+      </Flex>
     </HelloStyle>
   );
 };

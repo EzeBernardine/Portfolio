@@ -1,11 +1,11 @@
 import React from "react";
 import { ContactMeStyle } from "./styles";
-import { FlexibleDiv } from "../Box/flexibleDiv.styles";
+import { Flex } from "../Box/flexibleDiv.styles";
 import Button from "../Button";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 
-const ContactMe = () => {
+const ContactMe = ({ contact }) => {
   const validationSchema = yup.object().shape({
     name: yup
       .string()
@@ -14,12 +14,12 @@ const ContactMe = () => {
     email: yup
       .string()
       .email()
-      .required()
+      .required(),
   });
 
   return (
-    <ContactMeStyle>
-      <FlexibleDiv
+    <ContactMeStyle ref={contact}>
+      <Flex
         justifyContent="space-between"
         alignItems="stretch"
         className="main"
@@ -93,7 +93,7 @@ const ContactMe = () => {
                     />
                   </div>
 
-                  <FlexibleDiv className="btn" justifyContent="flex-end">
+                  <Flex className="btn" justifyContent="flex-end">
                     <Button
                       text="Hire Me"
                       bgColor="transparent"
@@ -102,13 +102,13 @@ const ContactMe = () => {
                       type="button"
                       click={() => []}
                     />
-                  </FlexibleDiv>
+                  </Flex>
                 </div>
               </Form>
             )}
           </Formik>
         </div>
-      </FlexibleDiv>
+      </Flex>
     </ContactMeStyle>
   );
 };
