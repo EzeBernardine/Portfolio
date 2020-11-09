@@ -1,20 +1,14 @@
 import styled from "styled-components";
 
 export const BlogStyle = styled.div`
-  .blog-container {
+  .blogs-container {
     padding: 0 10%;
     min-height: 80vh;
   }
   .blogs {
     margin: 10rem 0;
-    .blog {
-      padding: 30px;
+    .blog-container {
       position: relative;
-      border-radius: 4px;
-      overflow: hidden;
-      box-shadow: 0 0 1em 0 rgba(168, 171, 174, 0.15);
-      cursor: pointer;
-      transition: 100ms linear;
       &:hover {
         box-shadow: 0 0 2rem rgba(168, 171, 174, 0.15);
         transform: translateY(-5px);
@@ -28,28 +22,39 @@ export const BlogStyle = styled.div`
         font-size: 0.6rem;
         font-weight: 550;
         border-radius: 2px;
+        z-index: 5;
         color: white;
+        cursor: pointer;
         &:hover {
           background: #ddad5e;
         }
       }
-      .title {
-        color: #3b3a3a;
-        text-align: start;
-        font-size: 1.8rem;
-      }
-      .pictureFrame {
-        img {
-          object-fit: contain;
-          width: 100%;
-          height: 100%;
+      .blog {
+        padding: 30px;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 0 1em 0 rgba(168, 171, 174, 0.15);
+        cursor: pointer;
+        transition: 100ms linear;
+
+        .title {
+          color: #3b3a3a;
+          text-align: start;
+          font-size: 1.8rem;
         }
-      }
-      .subTitle {
-        color: #3b3a3a;
-        text-align: start;
-        font-size: 1rem;
-        font-weight: inherit;
+        .pictureFrame {
+          img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .subTitle {
+          color: #3b3a3a;
+          text-align: start;
+          font-size: 1rem;
+          font-weight: inherit;
+        }
       }
     }
   }

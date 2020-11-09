@@ -11,7 +11,7 @@ const Blog = () => {
     <BlogStyle>
       <MsallMenu />
 
-      <Flex className="blog-container">
+      <Flex className="blogs-container">
         <Grid
           className="blogs"
           gridCol="repeat(auto-fit, 300px)"
@@ -19,27 +19,34 @@ const Blog = () => {
           alignItems="stretch"
         >
           {blogs.map(({ href, title, img, subTitle, expKey }) => (
-            <a
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={expKey}
-            >
-              <Flex className="blog" width="300px">
-                <small className="url">Copy URL</small>
-                <Flex justifyContent="flex-start">
-                  <h2 className="title">{title}</h2>
+            <dvi className='blog-container'>
+              <small
+                className="url"
+                onClick={() => navigator.clipboard.writeText(href)}
+              >
+                Copy URL
+              </small>
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={expKey}
+              >
+                <Flex className="blog" width="300px">
+                  <Flex justifyContent="flex-start" className="blog-main">
+                    <h2 className="title">{title}</h2>
 
-                  <Flex height="200px" className="pictureFrame">
-                    {<img src={img ? img : tech} alt={title} />}
-                  </Flex>
+                    <Flex height="200px" className="pictureFrame">
+                      {<img src={img ? img : tech} alt={title} />}
+                    </Flex>
 
-                  <Flex width="auto" height="auto" className="subTitle">
-                    <sub> {subTitle}</sub>
+                    <Flex width="auto" height="auto" className="subTitle">
+                      <sub> {subTitle}</sub>
+                    </Flex>
                   </Flex>
                 </Flex>
-              </Flex>
-            </a>
+              </a>
+            </dvi>
           ))}
         </Grid>
       </Flex>
