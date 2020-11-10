@@ -3,17 +3,18 @@ import { MenuStyle } from "./styles";
 import { NavLink } from "react-router-dom";
 import pdf from "../../assets/images/My_Resume.pdf";
 
-const Menu = ({ about, services, skills, experience, contact }) => {
+// const Menu = ({ about, services, skills, experience, contact }) => {
+const Menu = () => {
   const [menuDiplay, setMenuDisplay] = useState(undefined);
 
   const handleDisplayMenu = () => setMenuDisplay(!menuDiplay);
 
-  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 80);
-  const executeScrollAbout = () => scrollToRef(about),
-    executeScrollServices = () => scrollToRef(services),
-    executeScrollSkills = () => scrollToRef(skills),
-    executeScrollExperience = () => scrollToRef(experience),
-    executeScrollContact = () => scrollToRef(contact);
+  // const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 80);
+  // const executeScrollAbout = () => scrollToRef(about),
+  //   executeScrollServices = () => scrollToRef(services),
+  //   executeScrollSkills = () => scrollToRef(skills),
+  //   executeScrollExperience = () => scrollToRef(experience),
+  //   executeScrollContact = () => scrollToRef(contact);
 
   return (
     <MenuStyle menuDiplay={menuDiplay}>
