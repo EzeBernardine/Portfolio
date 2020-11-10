@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const StacksStyle = styled.div`
   background: #1f2229;
-
+  box-shadow: 0 0px 36px 3px #0000008f;
+  position: relative;
+  /* box-shadow: inset 0 0 112px #000000; */
   padding: 50px 0;
   .container {
     width: 80%;

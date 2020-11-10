@@ -69,8 +69,8 @@ const ContactMe = ({ contact }) => {
                   <div className="inputMain">
                     <Field
                       type="text"
-                      name="name"
-                      placeholder="Name"
+                      name="phoneNumber"
+                      placeholder="Phone Number"
                       handlechange={handlechange}
                     />
                     <ErrorMessage
@@ -79,11 +79,12 @@ const ContactMe = ({ contact }) => {
                       className="error"
                     />
                   </div>
+
                   <div className="inputMain">
                     <Field
-                      type="text"
-                      name="name"
-                      placeholder="Name"
+                      type="textarea"
+                      name="message"
+                      placeholder="Message"
                       handlechange={handlechange}
                     />
                     <ErrorMessage

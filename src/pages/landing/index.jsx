@@ -6,7 +6,6 @@ import About from "../../component/About";
 import Services from "../../component/Services";
 import Experience from "../../component/Experience";
 import Stack from "../../component/Stacks";
-import Hello from "../../component/Hello";
 import ContactMe from "../../component/ContactMe";
 import Works from "../../component/works";
 import Footer from "../../component/Footer";
@@ -32,7 +31,6 @@ const Landing = () => {
       <Experience experience={experience} />
       <Works />
       <Stack skills={skills} />
-      <Hello />
       <ContactMe contact={contact} />
       <Footer />
     </LandingStyle>

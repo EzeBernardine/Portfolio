@@ -5,7 +5,7 @@ export const WorksStyle = styled.div`
   .container {
     padding: 50px 0;
     position: relative;
-    box-shadow: inset 0 0 112px #000000;
+    /* box-shadow: inset 0 0 112px #000000; */
     section {
       .images {
         width: 80%;

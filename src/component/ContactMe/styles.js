@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ContactMeStyle = styled.div`
   background: #1f2229;
   padding: 100px 20%;
-
+  /* box-shadow: 0 0px 36px 3px #0000008f;
+  position: relative; */
   @media (max-width: 1100px) {
     padding: 100px 10%;
     @media (max-width: 800px) {

@@ -7,7 +7,6 @@ const MsallMenu = ({ about, services, skills, experience, contact }) => {
   const [menuDiplay, setMenuDisplay] = useState(undefined);
   let [menuScrollPosition, setMenuScrollPosition] = useState(window.scrollY);
 
-  
   /**
    * determines of the menu should be displayed or not and on which screen size.
    */
@@ -46,9 +45,9 @@ const MsallMenu = ({ about, services, skills, experience, contact }) => {
           <div className="navDiv">
             <h1>Lady B</h1>
             <div className="menuIcon_div" onClick={handleDisplayMenu}>
-              <div className="menuIcon"></div>
-              <div className="menuIcon"></div>
-              <div className="menuIcon"></div>
+              <div className="menuIcon menuIcon1 menuItemTransition"></div>
+              <div className="menuIcon menuIcon2 "></div>
+              <div className="menuIcon menuIcon3 menuItemTransition"></div>
             </div>
           </div>
 

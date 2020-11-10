@@ -7,7 +7,15 @@ export const MenuStyle = styled.div`
     margin: 0;
   }
   header {
-    background: #14213d;
+    background: ${({ menuScrollPosition }) =>
+      menuScrollPosition === undefined
+        ? "#14213d"
+        : menuScrollPosition <= 500
+        ? "transparent"
+        : menuScrollPosition > 500 && menuScrollPosition <= 2900
+        ? "#14213d"
+        : "#1f2229"};
+    /* transition: 400ms linear; */
     margin: 0;
     height: 60px;
     position: fixed;
@@ -18,8 +26,8 @@ export const MenuStyle = styled.div`
     width: 100%;
     display: flex;
     @media (max-width: 600px) {
-      transition: ${({ menuDiplay }) => !menuDiplay && " .2s ease-in-out .2s"};
-      background: ${({ menuDiplay }) => menuDiplay && "  #04040487"};
+      transition: ${({ menuDiplay }) => !menuDiplay && " .2s linear .2s"};
+      background: ${({ menuDiplay }) => menuDiplay && "  #040404f2"};
     }
   }
   header menu {
@@ -39,7 +47,7 @@ export const MenuStyle = styled.div`
     font-family: "Ruthie", cursive;
     font-family: "Charmonman", cursive;
     @media (min-width: 600px) {
-      margin-left: 10%;
+      margin-left: 16%;
     }
   }
 
@@ -53,13 +61,10 @@ export const MenuStyle = styled.div`
     cursor: pointer;
     padding: 5px 10px;
     @media (max-width: 600px) {
-      margin: 5px auto;
+      margin: 2px auto;
       width: 100%;
-      border-radius: 50px;
-      padding: 10px 0;
-      /* &:hover {
-        background: #e5e5e5;
-      } */
+      border-radius: 0px;
+      padding: 5px 0;
     }
     &:hover {
       background: #aa8445;
@@ -75,8 +80,8 @@ export const MenuStyle = styled.div`
       color: white;
       background: none;
       padding: 0;
-      cursor: pointer;
       border: none;
+      cursor: pointer;
       text-decoration: none;
     }
     &:hover {
@@ -96,7 +101,7 @@ export const MenuStyle = styled.div`
     @media (max-width: 600px) {
       display: grid;
       padding: 0;
-      width: 80%;
+      width: 100%;
       margin: auto;
       justify-content: normal;
     }
@@ -110,14 +115,14 @@ export const MenuStyle = styled.div`
       visibility: hidden;
     }
     100% {
-      height: 270px;
+      height: 370px;
       padding-top: 30px;
       padding-bottom: 30px;
     }
   }
   @keyframes rollUp {
     0% {
-      height: 270px;
+      height: 370px;
       padding-top: 30px;
       padding-bottom: 30px;
     }
@@ -133,19 +138,22 @@ export const MenuStyle = styled.div`
   .linkDiv {
     margin-right: 10%;
     @media (max-width: 600px) {
-      margin: 15px 0 0;
-      background: #04040487;
-      width: 100%;
+      background: #040404f2;
+
       position: absolute;
-      top: 45px;
       border-bottom: 1px solid #fbc56d;
       overflow: hidden;
       display: ${(props) =>
         props.menuDiplay === undefined ? " none" : "grid"};
       animation: ${(props) =>
         props.menuDiplay
-          ? "rollDown .2s  ease-in forwards "
-          : " rollUp .3s  ease-in-out   forwards"};
+          ? "rollDown .3s  linear forwards "
+          : " rollUp .3s  linear forwards"};
+
+      width: 100%;
+      right: 0;
+      top: 60px;
+      margin: 0;
     }
   }
 
@@ -161,18 +169,41 @@ export const MenuStyle = styled.div`
     @media (max-width: 600px) {
       width: 80vw;
     }
-  }
-
-  .menuIcon_div {
-    display: none;
-    grid-gap: 7px;
-    cursor: pointer;
-    @media (max-width: 600px) {
-      display: grid;
-    }
-    .menuIcon {
+    .menuIcon_div {
+      display: none;
+      grid-gap: 7px;
+      cursor: pointer;
       width: 25px;
-      border: 1px solid white;
+      height: 25px;
+      position: relative;
+      @media (max-width: 600px) {
+        display: grid;
+      }
+      .menuIcon {
+        width: 25px;
+        height: 0;
+        border: 1px solid white;
+        transition: 250ms linear;
+      }
+      .menuIcon1 {
+        transform: ${({ menuDiplay }) =>
+          menuDiplay ? "rotate(45deg) " : "none"};
+      }
+      .menuIcon3 {
+        transform: ${({ menuDiplay }) =>
+          menuDiplay ? "rotate(-45deg)" : "none"};
+      }
+      .menuItemTransition {
+        position: ${({ menuDiplay }) => (menuDiplay ? "absolute" : "unset")};
+        right: ${({ menuDiplay }) => (menuDiplay ? "0" : "unset")};
+        left: ${({ menuDiplay }) => (menuDiplay ? "0" : "unset")};
+        top: ${({ menuDiplay }) => (menuDiplay ? "0" : "unset")};
+        bottom: ${({ menuDiplay }) => (menuDiplay ? "0" : "unset")};
+        margin: ${({ menuDiplay }) => (menuDiplay ? "auto" : "unset")};
+      }
+      .menuIcon2 {
+        display: ${({ menuDiplay }) => (menuDiplay ? "none" : "block")};
+      }
     }
   }
 `;
