@@ -35,7 +35,7 @@ const Menu = ({ about, services, skills, experience, contact }) => {
                   <NavLink to="/">Home</NavLink>
                 </button>
               </li>
-              <li onClick={() => executeScrollAbout("about")}>
+              {/* <li onClick={() => executeScrollAbout("about")}>
                 <button>About</button>
               </li>
               <li onClick={() => executeScrollServices("services")}>
@@ -49,7 +49,7 @@ const Menu = ({ about, services, skills, experience, contact }) => {
               </li>
               <li onClick={() => executeScrollContact("contact")}>
                 <button>Contact</button>
-              </li>
+              </li> */}
               <li>
                 <button onClick={() => window.open(pdf)}>
                   {/* <a href={pdf} target="_blank" rel="noopener noreferrer"> */}

@@ -61,10 +61,10 @@ export const MenuStyle = styled.div`
     cursor: pointer;
     padding: 5px 10px;
     @media (max-width: 800px) {
-      margin: 2px auto;
+      margin: 6px auto;
       width: 100%;
       border-radius: 5px;
-      padding: 5px 0;
+      padding: 7px 0;
     }
     &:hover {
       background: #aa8445;
@@ -110,21 +110,22 @@ export const MenuStyle = styled.div`
   @keyframes rollDown {
     0% {
       height: 0px;
-      padding-top: 5px;
-      padding-bottom: 5px;
+      padding-top: 0px;
+      padding-bottom: 0px;
       visibility: hidden;
     }
+
     100% {
-      height: 370px;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      height: 450px;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
   }
   @keyframes rollUp {
     0% {
-      height: 370px;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      height: 450px;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
 
     100% {
@@ -139,7 +140,6 @@ export const MenuStyle = styled.div`
     margin-right: 10%;
     @media (max-width: 800px) {
       background: #040404f2;
-
       position: absolute;
       border-bottom: 1px solid #fbc56d;
       overflow: hidden;
@@ -149,7 +149,6 @@ export const MenuStyle = styled.div`
         props.menuDiplay
           ? "rollDown .3s  linear forwards "
           : " rollUp .3s  linear forwards"};
-
       width: 100%;
       right: 0;
       top: 60px;

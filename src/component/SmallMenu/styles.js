@@ -25,7 +25,7 @@ export const MenuStyle = styled.div`
     z-index: 11;
     width: 100%;
     display: flex;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       transition: ${({ menuDiplay }) => !menuDiplay && " .2s linear .2s"};
       background: ${({ menuDiplay }) => menuDiplay && "  #040404f2"};
     }
@@ -37,7 +37,7 @@ export const MenuStyle = styled.div`
     display: flex;
     width: 100%;
     height: 100%;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       padding: 0;
       flex-direction: column;
     }
@@ -46,7 +46,7 @@ export const MenuStyle = styled.div`
     color: white;
     font-family: "Ruthie", cursive;
     font-family: "Charmonman", cursive;
-    @media (min-width: 600px) {
+    @media (min-width: 800px) {
       margin-left: 16%;
     }
   }
@@ -60,11 +60,11 @@ export const MenuStyle = styled.div`
     min-width: max-content;
     cursor: pointer;
     padding: 5px 10px;
-    @media (max-width: 600px) {
-      margin: 2px auto;
+    @media (max-width: 800px) {
+      margin: 6px auto;
       width: 100%;
-      border-radius: 0px;
-      padding: 5px 0;
+      border-radius: 5px;
+      padding: 7px 0;
     }
     &:hover {
       background: #aa8445;
@@ -87,7 +87,7 @@ export const MenuStyle = styled.div`
     &:hover {
       button,
       a {
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
           color: #14213d;
         }
       }
@@ -98,10 +98,10 @@ export const MenuStyle = styled.div`
     padding: 0;
     justify-content: center;
     text-align: center;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       display: grid;
       padding: 0;
-      width: 100%;
+      width: 80%;
       margin: auto;
       justify-content: normal;
     }
@@ -110,21 +110,22 @@ export const MenuStyle = styled.div`
   @keyframes rollDown {
     0% {
       height: 0px;
-      padding-top: 5px;
-      padding-bottom: 5px;
+      padding-top: 0px;
+      padding-bottom: 0px;
       visibility: hidden;
     }
+
     100% {
-      height: 370px;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      height: 250px;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
   }
   @keyframes rollUp {
     0% {
-      height: 370px;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      height: 250px;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
 
     100% {
@@ -137,9 +138,8 @@ export const MenuStyle = styled.div`
 
   .linkDiv {
     margin-right: 10%;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       background: #040404f2;
-
       position: absolute;
       border-bottom: 1px solid #fbc56d;
       overflow: hidden;
@@ -149,7 +149,6 @@ export const MenuStyle = styled.div`
         props.menuDiplay
           ? "rollDown .3s  linear forwards "
           : " rollUp .3s  linear forwards"};
-
       width: 100%;
       right: 0;
       top: 60px;
@@ -166,7 +165,7 @@ export const MenuStyle = styled.div`
     h1 {
       font-size: 1.4rem;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       width: 80vw;
     }
     .menuIcon_div {
@@ -176,7 +175,7 @@ export const MenuStyle = styled.div`
       width: 25px;
       height: 25px;
       position: relative;
-      @media (max-width: 600px) {
+      @media (max-width: 800px) {
         display: grid;
       }
       .menuIcon {
