@@ -18,10 +18,16 @@ export const LandingStyle = styled.div`
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    @media (max-width: 800px) {
+    /* @media (max-width: 800px) {
       margin-top: 100px;
       height: calc(100% - 100px);
+    } */
+    /* //// */
+    @media (max-width: 600px) {
+      margin-top: 0;
+      height: 100%;
     }
+    /* //// */
   }
 
   .landingImgDiv {
@@ -43,19 +49,25 @@ export const LandingStyle = styled.div`
     @media (max-width: 600px) {
       margin: auto;
       width: 100%;
-
       object-fit: cover;
+      /* //// */
+      height: 100%;
+      /* //// */
     }
   }
   .main_container .header_img_div img {
     width: auto;
     filter: drop-shadow(-42px 52px 9px rgba(23, 22, 22, 0.24));
-
     height: 100vh;
     max-height: 100%;
-    @media (max-width: 800px) {
+    /* @media (max-width: 800px) {
       height: calc(100vh - 100px);
+    } */
+    /* //// */
+    @media (max-width: 600px) {
+      height: 100%;
     }
+    /* //// */
   }
 
   .learning {
@@ -66,9 +78,9 @@ export const LandingStyle = styled.div`
     margin: auto;
     left: 10%;
     width: 450px;
+
     @media (max-width: 1000px) {
       background: #04040487;
-
       right: 0;
       left: 0;
       border: 1px solid #fbc56d;
@@ -81,9 +93,9 @@ export const LandingStyle = styled.div`
   }
   .captionDiv {
     overflow: hidden;
-    h2{
+    h2 {
       margin: auto;
-      font-family: "Charmonman",cursive;
+      font-family: "Charmonman", cursive;
       font-size: 4rem;
       word-spacing: nowrap;
       line-height: inherit;
@@ -105,7 +117,7 @@ export const LandingStyle = styled.div`
       font-weight: inherit;
       text-align: start;
       margin: 0;
-      font-family: "Charmonman",cursive;
+      font-family: "Charmonman", cursive;
       @media (max-width: 600px) {
         font-size: 1.5rem;
         text-align: center;

@@ -25,7 +25,7 @@ export const MenuStyle = styled.div`
     z-index: 11;
     width: 100%;
     display: flex;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       transition: ${({ menuDiplay }) => !menuDiplay && " .2s linear .2s"};
       background: ${({ menuDiplay }) => menuDiplay && "  #040404f2"};
     }
@@ -37,7 +37,7 @@ export const MenuStyle = styled.div`
     display: flex;
     width: 100%;
     height: 100%;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       padding: 0;
       flex-direction: column;
     }
@@ -46,7 +46,7 @@ export const MenuStyle = styled.div`
     color: white;
     font-family: "Ruthie", cursive;
     font-family: "Charmonman", cursive;
-    @media (min-width: 600px) {
+    @media (min-width: 800px) {
       margin-left: 16%;
     }
   }
@@ -60,10 +60,10 @@ export const MenuStyle = styled.div`
     min-width: max-content;
     cursor: pointer;
     padding: 5px 10px;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       margin: 2px auto;
       width: 100%;
-      border-radius: 0px;
+      border-radius: 5px;
       padding: 5px 0;
     }
     &:hover {
@@ -87,7 +87,7 @@ export const MenuStyle = styled.div`
     &:hover {
       button,
       a {
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
           color: #14213d;
         }
       }
@@ -98,10 +98,10 @@ export const MenuStyle = styled.div`
     padding: 0;
     justify-content: center;
     text-align: center;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       display: grid;
       padding: 0;
-      width: 100%;
+      width: 80%;
       margin: auto;
       justify-content: normal;
     }
@@ -137,7 +137,7 @@ export const MenuStyle = styled.div`
 
   .linkDiv {
     margin-right: 10%;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       background: #040404f2;
 
       position: absolute;
@@ -166,7 +166,7 @@ export const MenuStyle = styled.div`
     h1 {
       font-size: 1.4rem;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       width: 80vw;
     }
     .menuIcon_div {
@@ -176,7 +176,7 @@ export const MenuStyle = styled.div`
       width: 25px;
       height: 25px;
       position: relative;
-      @media (max-width: 600px) {
+      @media (max-width: 800px) {
         display: grid;
       }
       .menuIcon {
