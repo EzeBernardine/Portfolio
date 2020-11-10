@@ -125,14 +125,14 @@ export const MenuStyle = styled.div`
     }
 
     100% {
-      height: 450px;
+      height: 250px;
       padding-top: 15px;
       padding-bottom: 15px;
     }
   }
   @keyframes rollUp {
     0% {
-      height: 450px;
+      height: 250px;
       padding-top: 15px;
       padding-bottom: 15px;
     }
