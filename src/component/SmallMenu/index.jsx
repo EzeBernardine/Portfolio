@@ -22,19 +22,17 @@ const Menu = () => {
         <menu>
           <div className="navDiv">
             <h1>Lady B</h1>
-            <div className="menuIcon_div" onClick={handleDisplayMenu}>
-              <div className="menuIcon"></div>
-              <div className="menuIcon"></div>
-              <div className="menuIcon"></div>
-            </div>
+            <button onClick={handleDisplayMenu}>
+              <div className="menuIcon-container">
+                <div className="menuIcon_div"></div>
+              </div>
+            </button>
           </div>
 
           <div className="linkDiv">
             <ul>
               <li>
-                <button>
-                  <NavLink to="/">Home</NavLink>
-                </button>
+                <NavLink to="/">Home</NavLink>
               </li>
               {/* <li onClick={() => executeScrollAbout("about")}>
                 <button>About</button>
@@ -52,16 +50,10 @@ const Menu = () => {
                 <button>Contact</button>
               </li> */}
               <li>
-                <button onClick={() => window.open(pdf)}>
-                  {/* <a href={pdf} target="_blank" rel="noopener noreferrer"> */}
-                  Resume
-                  {/* </a> */}
-                </button>
+                <button onClick={() => window.open(pdf)}>Resume</button>
               </li>
               <li>
-                <button>
-                  <NavLink to="./blog">Blog</NavLink>
-                </button>
+                <NavLink to="./blog">Blog</NavLink>
               </li>
             </ul>
           </div>

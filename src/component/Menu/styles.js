@@ -10,12 +10,12 @@ export const MenuStyle = styled.div`
     background: ${({ menuScrollPosition }) =>
       menuScrollPosition === undefined
         ? "#14213d"
-        : menuScrollPosition <= 500
+        : menuScrollPosition <= 100
         ? "transparent"
-        : menuScrollPosition > 500 && menuScrollPosition <= 2900
+        : menuScrollPosition > 100 && menuScrollPosition <= 2900
         ? "#14213d"
         : "#1f2229"};
-    /* transition: 400ms linear; */
+    transition: background-color 250ms linear;
     margin: 0;
     height: 60px;
     position: fixed;
@@ -51,45 +51,54 @@ export const MenuStyle = styled.div`
     }
   }
 
-  header ul li {
-    list-style: none;
-    margin: 0 2px;
-    font-size: 12px;
-    border-radius: 3px;
-    overflow: hidden;
-    min-width: max-content;
-    cursor: pointer;
-    padding: 5px 10px;
-    @media (max-width: 800px) {
-      margin: 6px auto;
-      width: 100%;
-      border-radius: 5px;
-      padding: 7px 0;
-    }
-    &:hover {
-      background: #aa8445;
-    }
-  }
-
   header ul li *:active {
     outline: none;
   }
-  header ul li {
-    button,
-    a {
+  header ul {
+    li {
       color: white;
       background: none;
-      padding: 0;
-      border: none;
+      min-width: max-content;
       cursor: pointer;
+      padding: 5px 10px;
+      list-style: none;
+      margin: 0 2px;
+      font-size: 16px;
+      border-radius: 3px;
+      overflow: hidden;
+      border: none;
       text-decoration: none;
-    }
-    &:hover {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       button,
       a {
-        @media (max-width: 800px) {
-          color: #14213d;
+        background: none;
+        padding: 0;
+        border: none;
+        color: white;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &:hover {
+        button {
+          @media (max-width: 800px) {
+            color: #14213d;
+          }
         }
+      }
+      @media (max-width: 800px) {
+        margin: 10px auto;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px 0;
+      }
+      &:hover {
+        background: #aa8445;
       }
     }
   }
@@ -168,40 +177,53 @@ export const MenuStyle = styled.div`
     @media (max-width: 800px) {
       width: 80vw;
     }
-    .menuIcon_div {
-      display: none;
-      grid-gap: 7px;
+    button {
+      background: transparent;
+      border: none;
+      padding: 0;
       cursor: pointer;
-      width: 25px;
-      height: 25px;
-      position: relative;
-      @media (max-width: 800px) {
-        display: grid;
-      }
-      .menuIcon {
+      .menuIcon-container {
         width: 25px;
-        height: 0;
-        border: 1px solid white;
-        transition: 250ms linear;
-      }
-      .menuIcon1 {
-        transform: ${({ menuDiplay }) =>
-          menuDiplay ? "rotate(45deg) " : "none"};
-      }
-      .menuIcon3 {
-        transform: ${({ menuDiplay }) =>
-          menuDiplay ? "rotate(-45deg)" : "none"};
-      }
-      .menuItemTransition {
-        position: ${({ menuDiplay }) => (menuDiplay ? "absolute" : "unset")};
-        right: ${({ menuDiplay }) => (menuDiplay ? "0" : "unset")};
-        left: ${({ menuDiplay }) => (menuDiplay ? "0" : "unset")};
-        top: ${({ menuDiplay }) => (menuDiplay ? "0" : "unset")};
-        bottom: ${({ menuDiplay }) => (menuDiplay ? "0" : "unset")};
-        margin: ${({ menuDiplay }) => (menuDiplay ? "auto" : "unset")};
-      }
-      .menuIcon2 {
-        display: ${({ menuDiplay }) => (menuDiplay ? "none" : "block")};
+        height: 18px;
+
+        .menuIcon_div {
+          display: none;
+          grid-gap: 7px;
+          width: 24px;
+          height: 2px;
+          top: 9px;
+          background: white;
+          align-items: center;
+          position: relative;
+          @media (max-width: 800px) {
+            display: block;
+          }
+
+          visibility: ${({ menuDiplay }) => (menuDiplay ? "hidden " : "unset")};
+        }
+        .menuIcon_div::before,
+        .menuIcon_div::after {
+          content: "";
+          position: absolute;
+          width: 24px;
+          height: 2px;
+          background: white;
+          visibility: visible;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          transition: 250ms linear;
+        }
+        .menuIcon_div::before {
+          top: ${({ menuDiplay }) => (menuDiplay ? "0" : "-9px")};
+          transform: ${({ menuDiplay }) =>
+            menuDiplay ? "rotate(45deg) " : "none"};
+        }
+        .menuIcon_div::after {
+          top: ${({ menuDiplay }) => (menuDiplay ? "0" : "9px")};
+          transform: ${({ menuDiplay }) =>
+            menuDiplay ? "rotate(-45deg)" : "none"};
+        }
       }
     }
   }

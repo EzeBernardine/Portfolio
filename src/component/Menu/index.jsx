@@ -44,46 +44,60 @@ const MsallMenu = ({ about, services, skills, experience, contact }) => {
         <menu>
           <div className="navDiv">
             <h1>Lady B</h1>
-            <div className="menuIcon_div" onClick={handleDisplayMenu}>
-              <div className="menuIcon menuIcon1 menuItemTransition"></div>
-              <div className="menuIcon menuIcon2 "></div>
-              <div className="menuIcon menuIcon3 menuItemTransition"></div>
-            </div>
+            <button  onClick={handleDisplayMenu}>
+              <div className="menuIcon-container">
+                <div className="menuIcon_div"></div>
+              </div>
+            </button>
           </div>
 
           <div className="linkDiv">
             <ul>
+              <li
+                onClick={() => {
+                  executeScrollAbout("about");
+                  handleDisplayMenu();
+                }}
+              >
+                About
+              </li>
+              <li
+                onClick={() => {
+                  executeScrollServices("services");
+                  handleDisplayMenu();
+                }}
+              >
+                Services
+              </li>
+              <li
+                onClick={() => {
+                  executeScrollExperience("experience");
+                  handleDisplayMenu();
+                }}
+              >
+                Experience
+              </li>
+              <li
+                onClick={() => {
+                  executeScrollSkills("skills");
+                  handleDisplayMenu();
+                }}
+              >
+                Stack
+              </li>
+              <li
+                onClick={() => {
+                  executeScrollContact("contact");
+                  handleDisplayMenu();
+                }}
+              >
+                Contact
+              </li>
               <li>
-                <button>
-                  <NavLink to="/">Home</NavLink>
-                </button>
-              </li>
-              <li onClick={() => executeScrollAbout("about")}>
-                <button>About</button>
-              </li>
-              <li onClick={() => executeScrollServices("services")}>
-                <button>Services</button>
-              </li>
-              <li onClick={() => executeScrollExperience("experience")}>
-                <button>Experience</button>
-              </li>
-              <li onClick={() => executeScrollSkills("skills")}>
-                <button>Stack</button>
-              </li>
-              <li onClick={() => executeScrollContact("contact")}>
-                <button>Contact</button>
+                <button onClick={() => window.open(pdf)}>Resume</button>
               </li>
               <li>
-                <button onClick={() => window.open(pdf)}>
-                  {/* <a href={pdf} target="_blank" rel="noopener noreferrer"> */}
-                  Resume
-                  {/* </a> */}
-                </button>
-              </li>
-              <li>
-                <button>
-                  <NavLink to="./blog">Blog</NavLink>
-                </button>
+                <NavLink to="./blog">Blog</NavLink>
               </li>
             </ul>
           </div>

@@ -12,8 +12,8 @@ import Footer from "../../component/Footer";
 
 const Landing = () => {
   const about = useRef(null),
-    skills = useRef(null),
     services = useRef(null),
+    skills = useRef(null),
     contact = useRef(null),
     experience = useRef(null);
   return (
