@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MenuStyle = styled.div`
+export const SmallMenuStyle = styled.div`
   div {
     border: 0;
     padding: 0;
@@ -51,9 +51,6 @@ export const MenuStyle = styled.div`
     }
   }
 
-  header ul li *:active {
-    outline: none;
-  }
   header ul {
     li {
       color: white;
@@ -77,6 +74,7 @@ export const MenuStyle = styled.div`
         padding: 0;
         border: none;
         color: white;
+        font-size: 16px;
         width: 100%;
         height: 100%;
         cursor: pointer;
@@ -116,7 +114,7 @@ export const MenuStyle = styled.div`
     }
   }
 
-  @keyframes rollDown {
+  @keyframes down {
     0% {
       height: 0px;
       padding-top: 0px;
@@ -130,7 +128,7 @@ export const MenuStyle = styled.div`
       padding-bottom: 15px;
     }
   }
-  @keyframes rollUp {
+  @keyframes up {
     0% {
       height: 250px;
       padding-top: 15px;
@@ -156,8 +154,8 @@ export const MenuStyle = styled.div`
         props.menuDiplay === undefined ? " none" : "grid"};
       animation: ${(props) =>
         props.menuDiplay
-          ? "rollDown .3s  linear forwards "
-          : " rollUp .3s  linear forwards"};
+          ? "down .3s  linear forwards "
+          : " up .3s  linear forwards"};
       width: 100%;
       right: 0;
       top: 60px;

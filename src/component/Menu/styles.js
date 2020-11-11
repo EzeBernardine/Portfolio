@@ -51,9 +51,9 @@ export const MenuStyle = styled.div`
     }
   }
 
-  header ul li *:active {
+  /* header ul li *:active {
     outline: none;
-  }
+  } */
   header ul {
     li {
       color: white;
@@ -79,6 +79,7 @@ export const MenuStyle = styled.div`
         color: white;
         width: 100%;
         height: 100%;
+        font-size: 16px;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -104,8 +105,8 @@ export const MenuStyle = styled.div`
   }
   header ul {
     display: inline-flex;
-    padding: 0;
     justify-content: center;
+    padding: 0;
     text-align: center;
     @media (max-width: 800px) {
       display: grid;
@@ -166,11 +167,11 @@ export const MenuStyle = styled.div`
   }
 
   .navDiv {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
+    align-items: center; */
     width: 100%;
     height: 100%;
-    align-items: center;
     h1 {
       font-size: 1.4rem;
     }

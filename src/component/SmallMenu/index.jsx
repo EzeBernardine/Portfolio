@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MenuStyle } from "./styles";
+import { SmallMenuStyle } from "./styles";
 import { NavLink } from "react-router-dom";
 import pdf from "../../assets/images/My_Resume.pdf";
 
@@ -17,7 +17,7 @@ const Menu = () => {
   //   executeScrollContact = () => scrollToRef(contact);
 
   return (
-    <MenuStyle menuDiplay={menuDiplay}>
+    <SmallMenuStyle menuDiplay={menuDiplay}>
       <header>
         <menu>
           <div className="navDiv">
@@ -59,7 +59,7 @@ const Menu = () => {
           </div>
         </menu>
       </header>
-    </MenuStyle>
+    </SmallMenuStyle>
   );
 };
 export default Menu;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { MenuStyle } from "./styles";
 import { NavLink } from "react-router-dom";
 import pdf from "../../assets/images/My_Resume.pdf";
+import { Flex } from "../Box/flexibleDiv.styles";
 
 const MsallMenu = ({ about, services, skills, experience, contact }) => {
   const [menuDiplay, setMenuDisplay] = useState(undefined);
@@ -42,14 +43,14 @@ const MsallMenu = ({ about, services, skills, experience, contact }) => {
     >
       <header>
         <menu>
-          <div className="navDiv">
+          <Flex className="navDiv" justifyContent="space-between">
             <h1>Lady B</h1>
-            <button  onClick={handleDisplayMenu}>
+            <button onClick={handleDisplayMenu}>
               <div className="menuIcon-container">
                 <div className="menuIcon_div"></div>
               </div>
             </button>
-          </div>
+          </Flex>
 
           <div className="linkDiv">
             <ul>
@@ -75,7 +76,7 @@ const MsallMenu = ({ about, services, skills, experience, contact }) => {
                   handleDisplayMenu();
                 }}
               >
-                Experience
+                Works
               </li>
               <li
                 onClick={() => {

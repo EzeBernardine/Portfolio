@@ -39,3 +39,10 @@ a {
   text-decoration: none;
   margin: 0;
 }
+*:active {
+  outline: none;
+}
+
+ul {
+  padding: 0;
+}
