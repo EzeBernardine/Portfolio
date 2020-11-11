@@ -12,7 +12,7 @@ export const MenuStyle = styled.div`
         ? "#14213d"
         : menuScrollPosition <= 100
         ? "transparent"
-        : menuScrollPosition > 100 && menuScrollPosition <= 2900
+        : menuScrollPosition > 100 && menuScrollPosition <= 2500
         ? "#14213d"
         : "#1f2229"};
     transition: background-color 250ms linear;
@@ -26,8 +26,8 @@ export const MenuStyle = styled.div`
     width: 100%;
     display: flex;
     @media (max-width: 800px) {
-      transition: ${({ menuDiplay }) => !menuDiplay && " .2s linear .2s"};
-      background: ${({ menuDiplay }) => menuDiplay && "  #040404f2"};
+      transition: ${({ showMenuDropdown }) => !showMenuDropdown && " .2s linear .2s"};
+      background: ${({ showMenuDropdown }) => showMenuDropdown && "  #040404f2"};
     }
   }
   header menu {
@@ -154,9 +154,9 @@ export const MenuStyle = styled.div`
       border-bottom: 1px solid #fbc56d;
       overflow: hidden;
       display: ${(props) =>
-        props.menuDiplay === undefined ? " none" : "grid"};
+        props.showMenuDropdown === undefined ? " none" : "grid"};
       animation: ${(props) =>
-        props.menuDiplay
+        props.showMenuDropdown
           ? "rollDown .3s  linear forwards "
           : " rollUp .3s  linear forwards"};
       width: 100%;
@@ -167,9 +167,6 @@ export const MenuStyle = styled.div`
   }
 
   .navDiv {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     width: 100%;
     height: 100%;
     h1 {
@@ -177,55 +174,6 @@ export const MenuStyle = styled.div`
     }
     @media (max-width: 800px) {
       width: 80vw;
-    }
-    button {
-      background: transparent;
-      border: none;
-      padding: 0;
-      cursor: pointer;
-      .menuIcon-container {
-        width: 25px;
-        height: 18px;
-
-        .menuIcon_div {
-          display: none;
-          grid-gap: 7px;
-          width: 24px;
-          height: 2px;
-          top: 9px;
-          background: white;
-          align-items: center;
-          position: relative;
-          @media (max-width: 800px) {
-            display: block;
-          }
-
-          visibility: ${({ menuDiplay }) => (menuDiplay ? "hidden " : "unset")};
-        }
-        .menuIcon_div::before,
-        .menuIcon_div::after {
-          content: "";
-          position: absolute;
-          width: 24px;
-          height: 2px;
-          background: white;
-          visibility: visible;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          transition: 250ms linear;
-        }
-        .menuIcon_div::before {
-          top: ${({ menuDiplay }) => (menuDiplay ? "0" : "-9px")};
-          transform: ${({ menuDiplay }) =>
-            menuDiplay ? "rotate(45deg) " : "none"};
-        }
-        .menuIcon_div::after {
-          top: ${({ menuDiplay }) => (menuDiplay ? "0" : "9px")};
-          transform: ${({ menuDiplay }) =>
-            menuDiplay ? "rotate(-45deg)" : "none"};
-        }
-      }
     }
   }
 `;

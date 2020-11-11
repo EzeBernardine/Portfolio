@@ -3,15 +3,16 @@ import { MenuStyle } from "./styles";
 import { NavLink } from "react-router-dom";
 import pdf from "../../assets/images/My_Resume.pdf";
 import { Flex } from "../Box/flexibleDiv.styles";
+import MenuIcon from "../MenuIcon";
 
-const MsallMenu = ({ about, services, skills, experience, contact }) => {
-  const [menuDiplay, setMenuDisplay] = useState(undefined);
+const Menu = ({ about, services, skills, experience, contact }) => {
+  const [showMenuDropdown, setMenuDisplay] = useState(undefined);
   let [menuScrollPosition, setMenuScrollPosition] = useState(window.scrollY);
 
   /**
-   * determines of the menu should be displayed or not and on which screen size.
+   * determines if the menu should be displayed or not and on which screen size.
    */
-  const handleDisplayMenu = () => setMenuDisplay(!menuDiplay);
+  const handleDisplayMenu = () => setMenuDisplay(!showMenuDropdown);
 
   /**
    * keeps track of the scrollY position of the page
@@ -37,7 +38,7 @@ const MsallMenu = ({ about, services, skills, experience, contact }) => {
 
   return (
     <MenuStyle
-      menuDiplay={menuDiplay}
+      showMenuDropdown={showMenuDropdown}
       onScroll={() => handleScroll()}
       menuScrollPosition={menuScrollPosition}
     >
@@ -45,11 +46,10 @@ const MsallMenu = ({ about, services, skills, experience, contact }) => {
         <menu>
           <Flex className="navDiv" justifyContent="space-between">
             <h1>Lady B</h1>
-            <button onClick={handleDisplayMenu}>
-              <div className="menuIcon-container">
-                <div className="menuIcon_div"></div>
-              </div>
-            </button>
+            <MenuIcon
+              click={handleDisplayMenu}
+              showMenuDropdown={showMenuDropdown}
+            />
           </Flex>
 
           <div className="linkDiv">
@@ -107,4 +107,4 @@ const MsallMenu = ({ about, services, skills, experience, contact }) => {
     </MenuStyle>
   );
 };
-export default MsallMenu;
+export default Menu;

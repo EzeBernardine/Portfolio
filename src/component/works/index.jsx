@@ -1,16 +1,13 @@
 import React from "react";
 import { WorksStyle } from "./styles";
 import { Flex } from "../Box/flexibleDiv.styles";
-// import { SiStyledComponents } from "react-icons/si";
-// import { DiJavascript } from "react-icons/di";
-// import { FaReact } from "react-icons/fa";
 import chart from "../../assets/images/chart.png";
 import styledComponent from "../../assets/images/styledComponent.png";
 import node from "../../assets/images/node.png";
 import mongodb from "../../assets/images/mongodb.webp";
 import react from "../../assets/images/react.png";
 import js from "../../assets/images/js.png";
-import next from "../../assets/images/next.png";
+import next from "../../assets/images/nextjs.png";
 import materialUi from "../../assets/images/materialUi.png";
 
 const Works = () => {
@@ -21,25 +18,25 @@ const Works = () => {
       href: "https://embed.ng/",
       name: "EmBED",
       stacks: [
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={chart} alt="chart" />
         </Flex>,
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={js} alt="js" />
         </Flex>,
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={react} alt="react" />
         </Flex>,
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={styledComponent} alt="styledComponent" />
         </Flex>,
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={node} alt="node" />
         </Flex>,
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={mongodb} alt="mongodb" />
         </Flex>,
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={next} alt="next" />
         </Flex>,
       ],
@@ -51,13 +48,13 @@ const Works = () => {
       href: "https://suregifts.com.ng/",
       name: "Suregift",
       stacks: [
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={js} alt="js" />
         </Flex>,
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={react} alt="react" />
         </Flex>,
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={materialUi} alt="materialUi" />
         </Flex>,
       ],
@@ -69,13 +66,13 @@ const Works = () => {
       href: "https://learnfactory.com.ng/",
       name: "Learnfactory",
       stacks: [
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={js} alt="js" />
         </Flex>,
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={react} alt="react" />
         </Flex>,
-        <Flex className="pictureFrame" width="40px" height="40px">
+        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={styledComponent} alt="styledComponent" />
         </Flex>,
       ],

@@ -75,16 +75,12 @@ export const WorksStyle = styled.div`
               @media (max-width: 1000px) {
                 margin-right: 5px;
                 img {
-                  width: 30px;
-                  height: 30px;
+                  width: 40px;
+                  height: 40px;
                 }
               }
               @media (max-width: 800px) {
                 margin-right: 3px;
-                img {
-                  width: 20px;
-                  height: 20px;
-                }
               }
             }
           }
