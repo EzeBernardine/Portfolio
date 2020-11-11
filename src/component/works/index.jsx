@@ -21,25 +21,25 @@ const Works = () => {
       href: "https://embed.ng/",
       name: "EmBED",
       stacks: [
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={chart} alt="chart" />
         </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={js} alt="js" />
         </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={react} alt="react" />
         </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={styledComponent} alt="styledComponent" />
         </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={node} alt="node" />
         </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={mongodb} alt="mongodb" />
         </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={next} alt="next" />
         </Flex>,
       ],
@@ -51,13 +51,13 @@ const Works = () => {
       href: "https://suregifts.com.ng/",
       name: "Suregift",
       stacks: [
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={js} alt="js" />
         </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={react} alt="react" />
         </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={materialUi} alt="materialUi" />
         </Flex>,
       ],
@@ -69,13 +69,13 @@ const Works = () => {
       href: "https://learnfactory.com.ng/",
       name: "Learnfactory",
       stacks: [
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={js} alt="js" />
         </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={react} alt="react" />
         </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
+        <Flex className="pictureFrame" width="40px" height="40px">
           <img src={styledComponent} alt="styledComponent" />
         </Flex>,
       ],
