@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { MenuIconStyle } from "./styles";
 
 const MenuIcon = ({ click, showMenuDropdown }) => {
