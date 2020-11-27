@@ -14,10 +14,14 @@ const Menu = ({ about }) => {
         <div className="aboutParagraph">
           <div className="inside">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui error
-              maxime tempore eum voluptates officiis laboriosam exercitationem
-              explicabo fuga ullam doloribus nam aliquam possimus excepturi
-              quod, magnam id quibusdam voluptatibus.
+              Hi 👋, I am Bernardine May, a front end developer with keen interest
+              in building out rich interactive experiences and functional user
+              interfaces.
+              <br /> My interests however extends beyond the web as when i am
+              not coding you can catch me seeing good interesting movies with
+              Nollywood movies being the best of them all, good books also
+              becomes my greatest company when the demands of debugging my code
+              becomes so profuse.
             </p>
             <Flex
               className="btns"

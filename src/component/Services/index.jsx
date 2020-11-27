@@ -3,7 +3,6 @@ import { ServicesStyle } from "./styles";
 import { Flex } from "../Box/flexibleDiv.styles";
 
 const Services = ({ services }) => {
-
   const myServices = [
     {
       name: "Web Development",
@@ -25,12 +24,7 @@ const Services = ({ services }) => {
       <div className="container">
         <header>
           <h1>SERVICES</h1>
-          <p >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-            vitae deleniti cum assumenda esse dicta cupiditate voluptatum magnam
-            voluptatibus consequuntur error doloribus distinctio harum
-            provident, blanditiis fugit in laboriosam consectetur.
-          </p>
+          <p>I build Web, Mobile and Desktop Applications.</p>
         </header>
 
         <section>

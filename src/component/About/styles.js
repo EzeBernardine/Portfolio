@@ -35,7 +35,7 @@ export const AboutStyle = styled.div`
       width: 90%;
     }
     .inside {
-      width: 50%;
+      width: 65%;
       @media (max-width: 1200px) {
         width: 80%;
       }

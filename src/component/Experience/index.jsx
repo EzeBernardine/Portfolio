@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ExperinceStyle } from "./styles";
 import { Flex } from "../Box/flexibleDiv.styles";
 import { cards } from "./data";
-const Experience = ({experience}) => {
+const Experience = ({ experience }) => {
   const [select, setSelect] = useState(1);
   const handleSelectCard = (number) => setSelect(number);
 
@@ -12,9 +12,7 @@ const Experience = ({experience}) => {
         <div className="overlay"></div>
         <div className="head">
           <Flex className="top" justifyContent="space-between">
-            <Flex className="myName">
-              <h1>B</h1>
-            </Flex>
+         
             <div className="brief">
               <p>
                 <b>Act as if what you do makes a difference. It does.</b> <br />
@@ -26,10 +24,10 @@ const Experience = ({experience}) => {
                 Work <br /> Experience
               </h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
-                quae autem cum cupiditate quo dicta minima corporis velit,
-                cumque eligendi quos iure nihil vitae veniam deleniti alias
-                amet, hic quam!
+                In out current world, one should never underestimate the sheer
+                importance of experience as it commands value. In the course of
+                my career as a developer, some knowledge, has become part and
+                parcel of me.
               </p>
             </div>
           </Flex>
@@ -62,7 +60,9 @@ const Experience = ({experience}) => {
                     <p>{test}</p>
                   </div>
                   <div className="link">
-                    <a href={link} target='_blank' rel="noopener noreferrer">{name}</a>
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                      {name}
+                    </a>
                   </div>
                 </div>
               ))}

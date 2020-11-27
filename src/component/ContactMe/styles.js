@@ -73,7 +73,18 @@ export const ContactMeStyle = styled.div`
           color: #e5e5e5;
           background: transparent;
           border: none;
+          padding: 10px ;
           width: 100%;
+          border-bottom: 1px solid #959494;
+        }
+        textarea {
+          padding: 10px ;
+          color: #e5e5e5;
+          background: #2c2e33;
+          border: none;
+          width: 100%;
+          height: 100px;
+          resize: none;
           border-bottom: 1px solid #959494;
         }
         .btn {

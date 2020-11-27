@@ -2,7 +2,7 @@ import React from "react";
 import { FooterStyle } from "./styles";
 import { Flex } from "../Box/flexibleDiv.styles";
 import { FaFacebookF, FaMediumM } from "react-icons/fa";
-import { AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineTwitter, AiFillGithub, AiFillGitlab } from "react-icons/ai";
 import { TiSocialInstagram } from "react-icons/ti";
 
 const Footer = () => {
@@ -45,6 +45,24 @@ const Footer = () => {
               href="https://medium.com/@demayous1"
             >
               <FaMediumM />
+            </a>
+          </li>
+          <li>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/EzeBernardine"
+            >
+              <AiFillGithub />
+            </a>
+          </li>
+          <li>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://gitlab.com/EzeBernardineMay"
+            >
+              <AiFillGitlab />
             </a>
           </li>
         </ul>

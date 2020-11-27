@@ -28,9 +28,8 @@ export const ExperinceStyle = styled.div`
     }
 
     p {
-      font-size: 12px;
+      font-size: 14px;
       color: #f2f0f0;
-
       text-align: left;
     }
 
@@ -42,17 +41,7 @@ export const ExperinceStyle = styled.div`
         flex-direction: column;
         align-items: flex-start;
       }
-      .myName {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 50px;
-        width: 50px;
-        h1 {
-          font-family: "Ruthie", cursive;
-          color: #fbc56d;
-        }
-      }
+    
       .brief {
         width: 23%;
         margin-left: 50px;
@@ -150,7 +139,7 @@ export const ExperinceStyle = styled.div`
               font-size: 1rem;
               color: #d5d5d5;
               position: relative;
-              width: max-content;
+              /* width: max-content; */
             }
           }
           .link {

@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const WorksStyle = styled.div`
   background: #1f2229;
-  /* background: #14213d; */
-
   .pictureFrame {
     overflow: hidden;
     img {
@@ -25,6 +23,10 @@ export const WorksStyle = styled.div`
         }
         .work {
           margin-bottom: 50px;
+          &:not(:last-child) {
+            padding-bottom: 50px;
+            border-bottom: 1px solid #2b2e35;
+          }
           .work-img {
             @media (max-width: 700px) {
               margin-top: 20px;
@@ -45,7 +47,6 @@ export const WorksStyle = styled.div`
                   width: 100%;
                 }
                 cursor: pointer;
-                /* border-radius: 6px; */
                 overflow: hidden;
                 img {
                   height: 100%;

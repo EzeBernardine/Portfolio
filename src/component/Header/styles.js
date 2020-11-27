@@ -18,16 +18,11 @@ export const LandingStyle = styled.div`
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    /* @media (max-width: 800px) {
-      margin-top: 100px;
-      height: calc(100% - 100px);
-    } */
-    /* //// */
+
     @media (max-width: 600px) {
       margin-top: 0;
       height: 100%;
     }
-    /* //// */
   }
 
   .landingImgDiv {
@@ -50,9 +45,7 @@ export const LandingStyle = styled.div`
       margin: auto;
       width: 100%;
       object-fit: cover;
-      /* //// */
       height: 100%;
-      /* //// */
     }
   }
   .main_container .header_img_div img {
@@ -60,26 +53,23 @@ export const LandingStyle = styled.div`
     filter: drop-shadow(-42px 52px 9px rgba(23, 22, 22, 0.24));
     height: 100vh;
     max-height: 100%;
-    /* @media (max-width: 800px) {
-      height: calc(100vh - 100px);
-    } */
-    /* //// */
+
     @media (max-width: 600px) {
       height: 100%;
     }
-    /* //// */
   }
 
   .learning {
     position: absolute;
     z-index: 10;
-    top: 40%;
+    top: 30%;
 
     margin: auto;
     left: 10%;
     width: 450px;
 
     @media (max-width: 1000px) {
+      top: 40%;
       background: #04040487;
       right: 0;
       left: 0;
@@ -118,7 +108,7 @@ export const LandingStyle = styled.div`
       text-align: start;
       margin: 0;
       font-family: "Charmonman", cursive;
-      @media (max-width: 600px) {
+      @media (max-width: 1000px) {
         font-size: 1.5rem;
         text-align: center;
       }
@@ -126,21 +116,21 @@ export const LandingStyle = styled.div`
   }
   .moreDetail {
     border-top: 1px solid #fbc56d;
-    width: 300px;
+    width: 350px;
     margin: 0 auto 0 0;
     margin-top: 30px;
     padding-top: 40px;
-    @media (max-width: 600px) {
-      padding-top: 20px;
-      width: auto;
+    @media (max-width: 1000px) {
       margin: 10px 0 0 0;
+      width: auto;
+      padding-top: 20px;
     }
   }
   .moreDetail p {
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     text-align: start;
-    @media (max-width: 600px) {
+    @media (max-width: 1000px) {
       text-align: center;
     }
   }

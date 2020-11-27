@@ -14,10 +14,11 @@ const Landing = () => {
               </div>
               <div className="moreDetail">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloribus cumque optio voluptates repudiandae ut et, fuga
-                  atque rerum aliquam harum quia odit. Tempore illo nostrum
-                  deserunt alias porro quam tempora?
+                  Experienced Software Engineer with a demonstrated history of
+                  working in the computer software industry. Skilled in CSS,
+                  HTML, React, Electron, and D3js. Strong engineering
+                  professional with a Bachelor's degree focused in Computer
+                  Engineering from Micheal Okpara University.
                 </p>
               </div>
             </aside>

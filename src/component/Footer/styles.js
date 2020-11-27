@@ -7,8 +7,10 @@ export const FooterStyle = styled.div`
   ul {
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     li {
-      margin: 0 20px;
+      margin: 20px;
       background: #121417;
       border-radius: 100%;
       height: 40px;

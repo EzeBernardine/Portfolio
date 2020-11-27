@@ -28,10 +28,8 @@ const ContactMe = ({ contact }) => {
           <div className="right">
             <h1>Contact Me</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-              rem blanditiis ad nemo, aut sunt aspernatur dolorum quisquam qui
-              deserunt nesciunt nulla vel? Aperiam iure placeat dolores.
-              Exercitationem, magni consectetur!
+              Hi, am just a phone call away. Send me a mail, a text or a call,
+              lets colaborate and make the world a better place. 😃
             </p>
           </div>
           <div className="links">
@@ -82,7 +80,7 @@ const ContactMe = ({ contact }) => {
 
                   <div className="inputMain">
                     <Field
-                      type="textarea"
+                      component="textarea"
                       name="message"
                       placeholder="Message"
                       handlechange={handlechange}
