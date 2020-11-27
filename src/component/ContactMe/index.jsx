@@ -29,7 +29,8 @@ const ContactMe = ({ contact }) => {
             <h1>Contact Me</h1>
             <p>
               Hi, am just a phone call away. Send me a mail, a text or a call,
-              lets colaborate and make the world a better place. 😃
+              lets colaborate and make the world a better place.{" "}
+              <span> 😃</span>
             </p>
           </div>
           <div className="links">

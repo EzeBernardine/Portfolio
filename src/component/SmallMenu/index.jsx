@@ -14,7 +14,7 @@ const Menu = () => {
       <header>
         <menu>
           <div className="navDiv">
-            <h1>Lady B</h1>
+            <h1>B</h1>
             <MenuIcon
               click={handleDisplayMenu}
               showMenuDropdown={showMenuDropdown}
