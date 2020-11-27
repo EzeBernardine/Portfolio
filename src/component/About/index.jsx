@@ -14,7 +14,7 @@ const Menu = ({ about }) => {
         <div className="aboutParagraph">
           <div className="inside">
             <p>
-              Hi <span> 👋</span>, I am Bernardine May, a front end developer
+              Hi <span role="img" aria-label="waving emoji"> 👋</span>, I am Bernardine May, a front end developer
               with keen interest in building out rich interactive experiences
               and functional user interfaces.
               <br /> My interests however extends beyond the web as when i am

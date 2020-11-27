@@ -30,7 +30,9 @@ const ContactMe = ({ contact }) => {
             <p>
               Hi, am just a phone call away. Send me a mail, a text or a call,
               lets colaborate and make the world a better place.{" "}
-              <span> 😃</span>
+              <span role="img" aria-label="Smiling emoji">
+                😃
+              </span>
             </p>
           </div>
           <div className="links">
