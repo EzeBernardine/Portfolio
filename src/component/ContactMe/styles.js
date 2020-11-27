@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import dots from "../../assets/images/dots.png";
 
 export const ContactMeStyle = styled.div`
   background: #1f2229;
@@ -50,7 +51,7 @@ export const ContactMeStyle = styled.div`
           position: relative;
           padding-left: 15px;
           color: #fbc56d;
-            font-size: 0.8rem;
+          font-size: 0.8rem;
           &:before {
             content: "✔️";
             position: absolute;
@@ -64,6 +65,9 @@ export const ContactMeStyle = styled.div`
     width: 45%;
     form {
       box-shadow: 0 0px 36px 3px #0000008f;
+          background-image: url(${dots});
+          background-repeat: no-repeat;
+          background-size: auto 100%;
       .formSub {
         padding: 40px;
         display: grid;
@@ -73,19 +77,23 @@ export const ContactMeStyle = styled.div`
           color: #e5e5e5;
           background: transparent;
           border: none;
-          padding: 10px ;
+          padding: 10px;
           width: 100%;
-          border-bottom: 1px solid #959494;
+          /* border-bottom: 1px solid #959494; */
+          background: #2c2e3391;
         }
         textarea {
-          padding: 10px ;
+          padding: 10px;
           color: #e5e5e5;
-          background: #2c2e33;
+          background: #2c2e3391;
           border: none;
           width: 100%;
           height: 100px;
           resize: none;
-          border-bottom: 1px solid #959494;
+         /* border-bottom: 1px solid #959494; */
+          /*  background-image: url(${dots});
+          background-repeat: no-repeat;
+          background-size: 100%; */
         }
         .btn {
           margin-top: 20px;
