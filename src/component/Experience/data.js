@@ -6,7 +6,7 @@ export const cards = [
     test:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dicta libero exercitationem consectetur, et quas obcaecati, eius voluptatibus ea, sapiente nulla quibusdam suscipit. Impedit vel sint fugiat asperiores ipsa ratione.",
     link: "https://embed.ng/",
-    name: 'EmBED.ng'
+    name: "EmBED.ng",
   },
   {
     title: "Front-end lead, Alozie App",
@@ -14,8 +14,8 @@ export const cards = [
     expKey: 12,
     test:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dicta libero exercitationem consectetur, et quas obcaecati, eius voluptatibus ea, sapiente nulla quibusdam suscipit. Impedit vel sint fugiat asperiores ipsa ratione.",
-      link: '#',
-      name: 'PDF Converter'
+    link: "#",
+    name: "PDF Converter",
   },
   {
     title: "Front-end developer, Surgift",
@@ -23,7 +23,7 @@ export const cards = [
     expKey: 13,
     test:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dicta libero exercitationem consectetur, et quas obcaecati, eius voluptatibus ea, sapiente nulla quibusdam suscipit. Impedit vel sint fugiat asperiores ipsa ratione.",
-      link: 'https://suregifts.com.ng/',
-      name: 'Suregift'
+    link: "https://suregifts.com.ng/",
+    name: "Suregift",
   },
 ];

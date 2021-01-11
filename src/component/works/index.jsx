@@ -9,6 +9,8 @@ import react from "../../assets/images/react.png";
 import js from "../../assets/images/js.png";
 import next from "../../assets/images/nextjs.png";
 import materialUi from "../../assets/images/materialUi.png";
+import html_css from "../../assets/images/html_css.png";
+import { css } from "styled-components";
 
 const Works = () => {
   const collection = [
@@ -79,6 +81,21 @@ const Works = () => {
       detail:
         "LearnFactory Nigeria was created with 2 main objectives; to groom the 21st Century Software Engineer and to Provide a conducive environment for technology innovation, collaboration and growth of technical startups in Nigeria.",
     },
+    {
+      img: require("../../assets/images/experience/GC.png"),
+      expKey: 15,
+      href: "https://bernarsgithubclone.netlify.app/",
+      name: "Github Clone",
+      stacks: [
+        <Flex className="pictureFrame" width="50px" height="50px">
+          <img src={js} alt="js" />
+        </Flex>,
+        <Flex className="pictureFrame" width="50px" height="50px">
+          <img src={html_css} alt="react" />
+        </Flex>,
+      ],
+      detail: "My github page clone",
+    },
   ];
 
   return (
@@ -88,7 +105,7 @@ const Works = () => {
           <Flex alignItems="first baseline">
             <div className="images">
               {collection.map(({ img, expKey, href, name, stacks, detail }) => (
-                <Flex className="work" alignItems='flex-start'>
+                <Flex className="work" alignItems="flex-start">
                   <Flex className="work-img" width="50%">
                     <a
                       href={href}
