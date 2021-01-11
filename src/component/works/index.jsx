@@ -10,7 +10,6 @@ import js from "../../assets/images/js.png";
 import next from "../../assets/images/nextjs.png";
 import materialUi from "../../assets/images/materialUi.png";
 import html_css from "../../assets/images/html_css.png";
-import { css } from "styled-components";
 
 const Works = () => {
   const collection = [
