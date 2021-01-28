@@ -45,7 +45,7 @@ const Menu = ({ about, services, skills, experience, contact }) => {
       <header>
         <menu>
           <Flex className="navDiv" justifyContent="space-between">
-            <h1>B</h1>
+            <h1>Bernardine</h1>
             <MenuIcon
               click={handleDisplayMenu}
               showMenuDropdown={showMenuDropdown}

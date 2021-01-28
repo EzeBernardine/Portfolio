@@ -24,7 +24,7 @@ const Services = ({ services }) => {
       <div className="container">
         <header>
           <h1>SERVICES</h1>
-          <p>I build Web, Mobile and Desktop Applications.</p>
+          <p>I build Web and Desktop Applications.</p>
         </header>
 
         <section>

@@ -4,7 +4,7 @@ export const cards = [
     date: "20-15-2012",
     expKey: 1,
     test:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dicta libero exercitationem consectetur, et quas obcaecati, eius voluptatibus ea, sapiente nulla quibusdam suscipit. Impedit vel sint fugiat asperiores ipsa ratione.",
+      "I led the team that successfully built out the UI screens for all the various parts of the application. From Building reusable components to integrating various kinds of charts for collating data for statistical analysis.",
     link: "https://embed.ng/",
     name: "EmBED.ng",
   },
@@ -12,8 +12,7 @@ export const cards = [
     title: "Front-end lead, Alozie App",
     date: "20-15-2012",
     expKey: 12,
-    test:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dicta libero exercitationem consectetur, et quas obcaecati, eius voluptatibus ea, sapiente nulla quibusdam suscipit. Impedit vel sint fugiat asperiores ipsa ratione.",
+    test: " Built a PDF converter with Electron.js and React.js.",
     link: "#",
     name: "PDF Converter",
   },
@@ -22,7 +21,7 @@ export const cards = [
     date: "20-15-2012",
     expKey: 13,
     test:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat dicta libero exercitationem consectetur, et quas obcaecati, eius voluptatibus ea, sapiente nulla quibusdam suscipit. Impedit vel sint fugiat asperiores ipsa ratione.",
+      "I worked with the team that moved the codebase of Suregifts(a gifting company), from using REST API and redux  to GraphQL and Apollo. And I also Redesigned most of the screens from the newly designed UI's, created custom components and ensured that the app was highly responsive.",
     link: "https://suregifts.com.ng/",
     name: "Suregift",
   },

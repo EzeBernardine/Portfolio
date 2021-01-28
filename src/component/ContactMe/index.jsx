@@ -98,7 +98,8 @@ const ContactMe = ({ contact }) => {
                   <Flex className="btn" justifyContent="flex-end">
                     <Button
                       text="Hire Me"
-                      bgColor="transparent"
+                      bgColor="#1f2229"
+                      hColor='#1a1c22'
                       size="md"
                       color="#E5E5E5"
                       type="button"

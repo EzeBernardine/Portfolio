@@ -14,11 +14,9 @@ const Landing = () => {
               </div>
               <div className="moreDetail">
                 <p>
-                  Experienced Software Engineer with a demonstrated history of
-                  working in the computer software industry. Skilled in CSS,
-                  HTML, React, Electron, and D3js. Strong engineering
-                  professional with a Bachelor's degree focused in Computer
-                  Engineering from Micheal Okpara University.
+                  I love to bring out the beauty in your UI. I will give you
+                  that immaculate touch that makes your UI designs sit well on
+                  all devices
                 </p>
               </div>
             </aside>

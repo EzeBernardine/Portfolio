@@ -24,7 +24,7 @@ const Experience = ({ experience }) => {
                 Work <br /> Experience
               </h1>
               <p>
-                In out current world, one should never underestimate the sheer
+                In our current world, one should never underestimate the sheer
                 importance of experience as it commands value. In the course of
                 my career as a developer, some knowledge, has become part and
                 parcel of me.

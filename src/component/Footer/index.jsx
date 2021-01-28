@@ -8,7 +8,7 @@ import { TiSocialInstagram } from "react-icons/ti";
 const Footer = () => {
   return (
     <FooterStyle>
-      <p>@2020</p>
+      <p>@2021</p>
       <Flex>
         <ul>
           <li>
