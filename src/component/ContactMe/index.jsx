@@ -40,7 +40,7 @@ const ContactMe = ({ contact }) => {
               <li>+2347038065257</li>
               <li>demayous1@gmail.com</li>
               <li>demayous2@gmail.com</li>
-              <li>Nigeria, Aba</li>
+              <li>Nigeria</li>
             </ul>
           </div>
         </div>
