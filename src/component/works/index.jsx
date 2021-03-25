@@ -41,7 +41,7 @@ const Works = () => {
           <img src={next} alt="next" />
         </Flex>,
       ],
-      detail: "Platform for managing sales",
+      detail: "Platform for keeping track of stock.",
     },
     {
       img: require("../../assets/images/experience/EmBED(1).png"),
