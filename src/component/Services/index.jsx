@@ -14,7 +14,7 @@ const Services = ({ services }) => {
     {
       name: "Desktop Development",
       about:
-        "Using electronjs, I build desktop apps for any OS.",
+        "Using electronjs, I build desktop apps for any operating system.",
       img: require("../../assets/images/desktop.jpg"),
       exp_key: 2,
     },
