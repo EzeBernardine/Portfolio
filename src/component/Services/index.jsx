@@ -7,14 +7,14 @@ const Services = ({ services }) => {
     {
       name: "Web Development",
       about:
-        "  voluptatibus consequuntur error doloribus distinctio harum      provident, blanditiis fugit in laboriosam consectetur",
+        "Build all web applications that can run on any browser",
       img: require("../../assets/images/dev.png"),
       exp_key: 1,
     },
     {
       name: "Desktop Development",
       about:
-        "  voluptatibus consequuntur error doloribus distinctio harum      provident, blanditiis fugit in laboriosam consectetur",
+        "Using electronjs, I build desktop apps for any OS.",
       img: require("../../assets/images/desktop.jpg"),
       exp_key: 2,
     },
