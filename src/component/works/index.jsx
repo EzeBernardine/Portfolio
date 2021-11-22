@@ -14,14 +14,11 @@ import html_css from "../../assets/images/html_css.png";
 const Works = () => {
   const collection = [
     {
-      img: require("../../assets/images/experience/myinventhub.png"),
+      img: require("../../assets/images/experience/bitville.png"),
       expKey: 1,
-      href: "https://myinventhub.com/",
-      name: "My Invent Hub",
+      href: "https://bitville.academy/",
+      name: "Bitville",
       stacks: [
-        <Flex className="pictureFrame" width="50px" height="50px">
-          <img src={chart} alt="chart" />
-        </Flex>,
         <Flex className="pictureFrame" width="50px" height="50px">
           <img src={js} alt="js" />
         </Flex>,
@@ -35,43 +32,10 @@ const Works = () => {
           <img src={node} alt="node" />
         </Flex>,
         <Flex className="pictureFrame" width="50px" height="50px">
-          <img src={mongodb} alt="mongodb" />
-        </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
           <img src={next} alt="next" />
         </Flex>,
       ],
-      detail: "Platform for keeping track of stock.",
-    },
-    {
-      img: require("../../assets/images/experience/EmBED(1).png"),
-      expKey: 12,
-      href: "https://embed.ng/",
-      name: "EmBED",
-      stacks: [
-        <Flex className="pictureFrame" width="50px" height="50px">
-          <img src={chart} alt="chart" />
-        </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
-          <img src={js} alt="js" />
-        </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
-          <img src={react} alt="react" />
-        </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
-          <img src={styledComponent} alt="styledComponent" />
-        </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
-          <img src={node} alt="node" />
-        </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
-          <img src={mongodb} alt="mongodb" />
-        </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
-          <img src={next} alt="next" />
-        </Flex>,
-      ],
-      detail: "Platform for Homeschooling, providing rich content.",
+      detail: "Platform for learning how to trade cryptocurrency.",
     },
     {
       img: require("../../assets/images/experience/suregift.png"),
@@ -90,25 +54,6 @@ const Works = () => {
         </Flex>,
       ],
       detail: "Buy Gift Cards For The Best Stores In Nigeria",
-    },
-    {
-      img: require("../../assets/images/experience/lf.png"),
-      expKey: 14,
-      href: "https://learnfactory.com.ng/",
-      name: "Learnfactory",
-      stacks: [
-        <Flex className="pictureFrame" width="50px" height="50px">
-          <img src={js} alt="js" />
-        </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
-          <img src={react} alt="react" />
-        </Flex>,
-        <Flex className="pictureFrame" width="50px" height="50px">
-          <img src={styledComponent} alt="styledComponent" />
-        </Flex>,
-      ],
-      detail:
-        "LearnFactory Nigeria was created with 2 main objectives; to groom the 21st Century Software Engineer and to Provide a conducive environment for technology innovation, collaboration and growth of technical startups in Nigeria.",
     },
     {
       img: require("../../assets/images/experience/GC.png"),

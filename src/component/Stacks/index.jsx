@@ -7,22 +7,22 @@ const Stack = ({ skills }) => {
   const Stacks = [
     {
       name: "HTML",
-      range: 90,
+      range: 98,
       expKey: 1,
     },
     {
       name: "CSS",
-      range: 94,
+      range: 98,
       expKey: 12,
     },
     {
       name: "Javascript",
-      range: 80,
+      range: 90,
       expKey: 13,
     },
     {
       name: "REACT",
-      range: 80,
+      range: 90,
       expKey: 14,
     },
     {
@@ -32,11 +32,16 @@ const Stack = ({ skills }) => {
     },
     {
       name: "Styled Component",
-      range: 95,
+      range: 98,
       expKey: 16,
     },
     {
       name: "SVG",
+      range: 70,
+      expKey: 16,
+    },
+    {
+      name: "Typescript",
       range: 70,
       expKey: 16,
     },

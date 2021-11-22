@@ -45,7 +45,7 @@ const ContactMe = ({ contact }) => {
           </div>
         </div>
 
-        <div className="side form">
+        {/* <div className="side form">
           <Formik
             initialValues={{ email: "", name: "" }}
             validationSchema={validationSchema}
@@ -110,7 +110,7 @@ const ContactMe = ({ contact }) => {
               </Form>
             )}
           </Formik>
-        </div>
+        </div> */}
       </Flex>
     </ContactMeStyle>
   );
