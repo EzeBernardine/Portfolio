@@ -1,10 +1,10 @@
 import React from "react";
 import { WorksStyle } from "./styles";
 import { Flex } from "../Box/flexibleDiv.styles";
-import chart from "../../assets/images/chart.png";
+// import chart from "../../assets/images/chart.png";
 import styledComponent from "../../assets/images/styledComponent.png";
 import node from "../../assets/images/node.png";
-import mongodb from "../../assets/images/mongodb.webp";
+// import mongodb from "../../assets/images/mongodb.webp";
 import react from "../../assets/images/react.png";
 import js from "../../assets/images/js.png";
 import next from "../../assets/images/nextjs.png";
