@@ -16,7 +16,7 @@ const Landing = () => {
                 <p>
                   I love to bring out the beauty in your UI. I will give you
                   that immaculate touch that makes your UI designs sit well on
-                  all devices
+                  all devices.
                 </p>
               </div>
             </aside>
