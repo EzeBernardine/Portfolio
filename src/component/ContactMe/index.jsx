@@ -1,21 +1,21 @@
 import React from "react";
 import { ContactMeStyle } from "./styles";
 import { Flex } from "../Box/flexibleDiv.styles";
-import Button from "../Button";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as yup from "yup";
+// import Button from "../Button";
+// import { Formik, Form, Field, ErrorMessage } from "formik";
+// import * as yup from "yup";
 
 const ContactMe = ({ contact }) => {
-  const validationSchema = yup.object().shape({
-    name: yup
-      .string()
-      .max(16)
-      .required(),
-    email: yup
-      .string()
-      .email()
-      .required(),
-  });
+  // const validationSchema = yup.object().shape({
+  //   name: yup
+  //     .string()
+  //     .max(16)
+  //     .required(),
+  //   email: yup
+  //     .string()
+  //     .email()
+  //     .required(),
+  // });
 
   return (
     <ContactMeStyle ref={contact}>
