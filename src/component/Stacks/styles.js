@@ -43,9 +43,13 @@ export const StacksStyle = styled.div`
       margin: 0 0 0 auto;
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+ 
       flex-wrap: wrap;
+	  & > div {
+          margin: 20px;
+        }
       @media (max-width: 1100px) {
         justify-content: space-around;
         & > div {

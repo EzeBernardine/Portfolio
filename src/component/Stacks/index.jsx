@@ -45,6 +45,36 @@ const Stack = ({ skills }) => {
       range: 70,
       expKey: 16,
     },
+    {
+      name: "Nextjs",
+      range: 90,
+      expKey: 16,
+    },
+    {
+      name: "OOP",
+      range: 95,
+      expKey: 16,
+    },
+    {
+      name: "SWR",
+      range: 90,
+      expKey: 16,
+    },
+    {
+      name: "React Native",
+      range: 60,
+      expKey: 16,
+    },
+    {
+      name: "Redux",
+      range: 90,
+      expKey: 16,
+    },
+    {
+      name: "Context",
+      range: 95,
+      expKey: 16,
+    },
   ];
   return (
     <StacksStyle>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Flex } from "../Box/flexibleDiv.styles";
 
 export const WorksStyle = styled.div`
   background: #1f2229;
@@ -22,9 +23,9 @@ export const WorksStyle = styled.div`
           width: 90%;
         }
         .work {
-          margin-bottom: 50px;
+          margin-bottom: 20px;
           &:not(:last-child) {
-            padding-bottom: 50px;
+            padding-bottom: 20px;
             border-bottom: 1px solid #2b2e35;
           }
           .work-img {
@@ -40,6 +41,8 @@ export const WorksStyle = styled.div`
               .pictureFrame {
                 height: auto;
                 width: 70%;
+				max-height: 300px;
+				height: 300px;
                 @media (max-width: 1000px) {
                   width: 90%;
                 }
@@ -69,6 +72,10 @@ export const WorksStyle = styled.div`
             font-family: "Charmonman", cursive;
           }
           .work-stack {
+			margin-top: 7px;
+			ul {
+				text-align: start;
+			}
             li {
               list-style-type: none;
               display: inline-flex;
@@ -89,6 +96,7 @@ export const WorksStyle = styled.div`
             color: white;
             text-align: start;
             font-size: 16px;
+			margin-top: 30px;
           }
           @media (max-width: 700px) {
             width: 100%;
@@ -98,4 +106,16 @@ export const WorksStyle = styled.div`
       }
     }
   }
+`;
+
+export const StackContainer = styled(Flex)`
+	background-color: #4a4949;
+	padding: 3px 10px;
+	border-radius: 4px;
+`;
+
+export const StackText = styled.span`
+	color: #c2bfbf;
+	margin: 0 0px 0 1px;
+	font-size: 14px;
 `;

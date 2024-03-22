@@ -21,11 +21,11 @@ const Landing = () => {
               </div>
             </aside>
 
-            <div className="header_img_Maindiv">
+            {/* <div className="header_img_Maindiv">
               <div className="header_img_div">
                 <img src={require("../../assets/images/ladyB.png")} alt="" />
               </div>
-            </div>
+            </div> */}
           </aside>
         </div>
       </section>

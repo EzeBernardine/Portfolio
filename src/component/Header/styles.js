@@ -63,17 +63,20 @@ export const LandingStyle = styled.div`
     position: absolute;
     z-index: 10;
     top: 30%;
-
+	margin: auto;
     margin: auto;
-    left: 10%;
+    /* left: 10%; */
+	left: 0;
+	right: 0;
+	margin: auto;
     width: 450px;
 
     @media (max-width: 1000px) {
       top: 40%;
-      background: #04040487;
+      /* background: #04040487; */
       right: 0;
       left: 0;
-      border: 1px solid #fbc56d;
+      /* border: 1px solid #fbc56d; */
       padding: 20px;
     }
     @media (max-width: 600px) {
@@ -92,7 +95,7 @@ export const LandingStyle = styled.div`
       white-space: nowrap;
       color: white;
       font-weight: lighter;
-      text-align: start;
+      text-align: center;
       @media (max-width: 600px) {
         font-size: 2.5rem;
         text-align: center;
@@ -105,7 +108,7 @@ export const LandingStyle = styled.div`
       white-space: nowrap;
       color: #fbc56d;
       font-weight: inherit;
-      text-align: start;
+      text-align: center;
       margin: 0;
       font-family: "Charmonman", cursive;
       @media (max-width: 1000px) {
@@ -117,7 +120,7 @@ export const LandingStyle = styled.div`
   .moreDetail {
     border-top: 1px solid #fbc56d;
     width: 350px;
-    margin: 0 auto 0 0;
+    margin: 0 auto;
     margin-top: 30px;
     padding-top: 40px;
     @media (max-width: 1000px) {
@@ -129,7 +132,7 @@ export const LandingStyle = styled.div`
   .moreDetail p {
     font-size: 14px;
     color: white;
-    text-align: start;
+    text-align: center;
     @media (max-width: 1000px) {
       text-align: center;
     }

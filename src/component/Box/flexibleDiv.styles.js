@@ -9,6 +9,7 @@ export const Flex = styled.div`
   text-align: ${({ textAlign }) => textAlign || "center"};
   flex-wrap: ${({ flexWrap }) => flexWrap || "wrap"};
   flex-direction: ${({ flexDir }) => flexDir || "row"};
+  margin: ${({ margin}) => margin|| "auto"};
 `;
 
 export const Grid = styled('div')`
