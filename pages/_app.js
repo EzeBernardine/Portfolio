@@ -15,6 +15,20 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 
+			<script async src={`https://www.googletagmanager.com/gtag/js?id=G-79CZN8MD2N`}></script>
+						<script type="text/javascript"
+							dangerouslySetInnerHTML={{
+								__html: `
+									window.dataLayer = window.dataLayer || [];
+									function gtag(){dataLayer.push(arguments);}
+									gtag('js', new Date());
+									gtag('config',  "G-79CZN8MD2N);
+								`,
+							}}
+						/>;
+
+
+
 				<link rel="icon" href="../public/favicon.ico" />
 				<link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" />
 				<link rel="icon" type="image/png" sizes="32x32" href="../public/favicon-32x32.png" />
