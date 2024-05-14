@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "components/Intro/index.js", "components/Stars/index.js", "components/Carousel/index.js", "components/Carousel/styles.js", "utils/fetcher.js", "hooks/handlers/useCache.js", "hooks/handlers/useClearBrowserSession.js", "hoc/Admin-PreotectedRoute/index.js", "hoc/Admin-PreotectedRoute/styles.js", "screens/landing/write-feedback/feedback-modal/Rate/index.js", "screens/landing/write-feedback/feedback-modal/Rate/styles.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,9 @@
+export const SET_ACCESS_TOKEN = "SET_ACCESS_TOKEN";
+export const SET_REFRESH_TOKEN = "SET_REFRESH_TOKEN";
+export const SET_IS_AUTHENTICATED = "SET_IS_AUTHENTICATED";
+export const SET_LOADING = "SET_LOADING";
+export const SET_USER = "SET_USER";
+export const SET_IS_ADMIN = "SET_IS_ADMIN";
+
+
+
