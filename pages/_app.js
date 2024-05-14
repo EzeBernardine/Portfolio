@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 
-				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-79CZN8MD2N`}></script>
+				{/* <script async src={`https://www.googletagmanager.com/gtag/js?id=G-79CZN8MD2N`}></script>
 				<script type="text/javascript"
 					dangerouslySetInnerHTML={{
 						__html: `
@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
 				<link rel="icon" type="image/png" sizes="32x32" href="../public/favicon-32x32.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="../public/favicon-16x16.png" />
 				<link rel="manifest" href="../public/site.webmanifest" />
-				 
+				  */}
 
 				<meta property="og:type" content="website" />
 				<meta property="og:author" content="Bernardine's Portfolio" />
