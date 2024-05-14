@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 
-				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-79CZN8MD2N`}></script>
+				{/* <script async src={`https://www.googletagmanager.com/gtag/js?id=G-79CZN8MD2N`}></script>
 				<script type="text/javascript"
 					dangerouslySetInnerHTML={{
 						__html: `
@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
 							gtag('config',  "G-79CZN8MD2N");
 						`,
 					}}
-				/>;
+				/>; */}
 
 
 
