@@ -1,7 +1,5 @@
 import "../styles/globals.css";
-import Head from "next/head";
-import { theme } from "../config/theme";
-import { ThemeProvider } from "styled-components";
+import Head from "next/head"; 
 import React from "react";
 
 
@@ -25,7 +23,7 @@ function MyApp({ Component, pageProps }) {
 							gtag('config',  "G-79CZN8MD2N");
 						`,
 					}}
-				/>; */}
+				/>;
 
 
 
@@ -46,7 +44,7 @@ function MyApp({ Component, pageProps }) {
 				<meta property="og:image:alt" content="Bernardine's Portfolio" />
 				<meta name="description" content="About Bernardine May, and few  of her works" />
 				<meta name="keywords" content="Bernardine's Portfolio, frontend engineer" />
-			 
+			  */}
 				<title>Eze Bernardine May</title>
 
 
@@ -54,9 +52,7 @@ function MyApp({ Component, pageProps }) {
 			</Head>
 
  
-			<ThemeProvider theme={theme}>
 				<Component {...pageProps} />
-			</ThemeProvider>
 		 
 	 
 			

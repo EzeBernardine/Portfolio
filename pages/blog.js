@@ -8,7 +8,7 @@ import LandingPage from "../screens/blog";
 
 
 
-export default function Landing() {
+export default function Blog() {
 	return (
 		<>
 			<LandingPage />
