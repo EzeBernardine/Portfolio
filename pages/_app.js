@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 
-				{/* <script async src={`https://www.googletagmanager.com/gtag/js?id=G-79CZN8MD2N`}></script>
+				<script async src={`https://www.googletagmanager.com/gtag/js?id=G-79CZN8MD2N`}></script>
 				<script type="text/javascript"
 					dangerouslySetInnerHTML={{
 						__html: `
@@ -44,7 +44,7 @@ function MyApp({ Component, pageProps }) {
 				<meta property="og:image:alt" content="Bernardine's Portfolio" />
 				<meta name="description" content="About Bernardine May, and few  of her works" />
 				<meta name="keywords" content="Bernardine's Portfolio, frontend engineer" />
-			  */}
+			 
 				<title>Eze Bernardine May</title>
 
 
